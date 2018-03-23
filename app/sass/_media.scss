@@ -1,0 +1,444 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+	.logo-text {
+		display: none;
+	}
+
+	.section {
+		// padding: 25px 0 30px 0;
+		&-title {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+	
+		&-main {
+			// padding-top: 100px;
+			// padding-bottom: 15px;
+			// &-title {
+			// 	font-size: 30px;
+			// 	margin-bottom: 40px;
+			// }
+			// &-form {
+			// 	padding: 15px 15px 25px 0px;
+			// 	margin-left: 50px;
+			// 	&-title {
+			// 		font-size: 20px;
+			// 		margin-bottom: 10px;
+			// 	}
+			// 	form {
+			// 		width: 170px;
+			// 		& > * {
+			// 			margin-bottom: 8px;
+			// 		}
+			// 	}
+			// }
+		}
+
+		&-form {
+			&-title {
+				font-size: 24px;
+			}
+		}
+
+		&-program {
+			.program {
+				&-title {
+					font-size: 20px;
+					margin-bottom: 10px;
+				}
+				img {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		&-polza {
+			.review {
+				display: block;
+				text-align: center;
+				img {
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		// &-form {
+		// 	padding-top: 20px;
+		// 	form {
+		// 		.input, .button {
+		// 			margin: 0 5px;
+		// 		}
+		// 	}
+		// }
+
+		// &-contact {
+		// 	position: relative;
+		// 	.section-main-form {
+		// 		.section-title {
+		// 			padding-top: 0;
+		// 		}
+		// 	}
+		// 	form {
+		// 		width: 300px;
+		// 	}
+		// 	&-title {
+		// 		font-size: 18px;
+		// 	}
+		// 	&-container {
+		// 		top: 50px;
+		// 	}
+		// }
+
+	}
+	.footer {
+		&-content {
+			display: block;
+			&-text {
+				max-width: none;
+				margin-top: 10px;
+			}
+			.logo {
+				margin-bottom: 10px;
+			}
+			.button {
+				margin-bottom: 10px;
+			}
+		}
+		// .button {
+		// 	padding-left: 10px;
+		// 	padding-right: 10px;
+		// }
+	}
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.button {
+		min-width: auto;
+	}
+
+	.page-wrapper {
+		// padding-top: 83px;
+	}
+
+	.header {
+		.button {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.hamburger {
+			display: block;
+		}
+	}
+
+	.main-menu {
+		position: fixed;
+		top: 107px;
+		left: 0;
+		right: 0;
+		text-align: left;
+		z-index: 98;
+		height: auto;
+		display: none;
+		background-color: rgba(255, 255, 255, 0.8);
+
+		ul {
+			display: block;
+			height: auto;
+			padding: 15px 0;
+			li {
+				margin-bottom: 10px;
+			}
+
+			a {
+				// color: $default_text_color;
+				&:hover, &.active {
+					color: $accent;
+				}
+			}
+		}
+	}
+
+	.section {
+
+		&-main {
+			padding-top: 200px;
+			&-title {
+				font-size: 35px;
+			}
+			&-form {
+				margin-left: 0;
+				&-title {
+					font-size: 20px;
+				}
+			}
+		}
+		&-form {
+			padding-bottom: 20px;
+			padding-top: 20px;
+			&-title {
+				margin-bottom: 20px;
+			}
+			form {
+				flex-direction: column;
+				.input {
+					margin-bottom: 15px;
+				}
+			}
+		}
+		&-polza {
+			.reviews {
+				display: block;
+			}
+			.review {
+				width: 100%;
+				text-align: left;
+				padding: 30px 30px 20px;
+				&::after {
+					content: "";
+					clear: both;
+					display: block;
+				}
+				img {
+					float: left;
+				}
+				&:nth-child(3) {
+					background: $green;
+				}
+				&:nth-child(4) {
+					background: $accent;
+				}
+			}
+		}
+		&-reason {
+			.reason {
+				width: 50%;
+			}
+		}
+
+		&-group {
+			.groups {
+				display: block;
+			}
+			.group {
+				width: 100%;
+				&-title {
+					font-size: 24px;
+				}
+				&-age {
+					font-size: 24px;
+					margin-bottom: 20px;
+				}
+				&-text {
+					text-align: center;
+				}
+			}
+		}
+		&-contact-content {
+			position: static;
+			max-width: 100%;
+			margin-left: 0;
+			padding: 20px 15px;
+			.section-contact-block {
+				
+			}
+		}
+		// &-group {
+		// 	.section-title {
+		// 		margin-bottom: 15px;
+		// 	}
+		// 	&-text {
+		// 		font-size: 16px;
+		// 		margin-bottom: 25px;
+		// 	}
+		// 	.groups {
+		// 		display: block;
+		// 	}
+		// 	.group {
+		// 		&::before {
+		// 			content: "";
+		// 			border-top: 4px solid $green;
+		// 			display: block;
+		// 			margin-bottom: 15px;
+		// 		}
+		// 		width: 100%;
+		// 		display: block;
+		// 		&-text {
+		// 			max-width: 700px;
+		// 		}
+		// 	}
+		// }
+	}
+	
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+
+	.hidden-xxs {
+		display: none !important;
+	}
+
+	.header {
+		.logo {
+			width: 120px;
+		}
+	}
+
+	.main-menu {
+		top: 74px;
+	}
+	.section {
+		padding: 30px 0;
+		&-title {
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+		&-main {
+			padding-top: 150px;
+			&-title {
+				font-size: 28px;
+			}
+			// &-form {
+			// 	&-title {
+			// 		font-size: 20px;
+			// 	}
+			// }
+		}
+		&-form {
+			.input, .button {
+				width: 100%;
+			}
+		}
+		&-polza {
+			.review {
+				text-align: center;
+				img {
+					float: none;
+				}
+			}
+		}
+		&-reason {
+			.reason {
+				margin-bottom: 30px;
+				width: 100%;
+				img {
+					height: 80px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		&-group {
+			&-text {
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+			.group {
+				&-title {
+					font-size: 24px;
+				}
+				&-age {
+					font-size: 18px;
+					margin-bottom: 15px;
+				}
+				&-text {
+					font-size: 16px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	.col-xxs-12 {
+		width: 100%;
+	}
+
+	.col-xxs-offset-0 {
+		margin-left: 0;
+	}
+
+	.hidden-xss {
+		display: none !important;
+	}
+
+	.mobtel{
+        display: block;
+	}
+	
+    .whatsapp{
+        display: block;
+    }
+
+	.modal {
+		&-content {
+			padding: 15px;
+		}
+	}
+
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
+	/**/
+
