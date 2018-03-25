@@ -397,7 +397,12 @@ body {
 	}
 	
 	&-schedule {
+      &-content {
+         width: 100%;
+         overflow-x: auto;
+      }
 		&-table {
+         min-width: 720px;
 			border-collapse: collapse;
 			th {
 				text-align: center;

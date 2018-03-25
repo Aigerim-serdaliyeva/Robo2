@@ -714,7 +714,11 @@ body {
       position: absolute;
       top: 100px;
       left: 0; }
+  .section-schedule-content {
+    width: 100%;
+    overflow-x: auto; }
   .section-schedule-table {
+    min-width: 720px;
     border-collapse: collapse; }
     .section-schedule-table th {
       text-align: center;
