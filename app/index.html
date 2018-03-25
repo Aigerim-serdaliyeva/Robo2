@@ -49,7 +49,7 @@
 
 					<div class="header-contact hidden-xxs">
 						<a href="tel:+77017178813" class="phone-link hidden-xs">+7 701 717-88-13</a>
-						<a href="#" class="button modal-open" data-id="application">Заказать звонок</a>
+						<a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
 					</div>
 					<button class="hamburger hamburger--elastic hamburger--accessible">
 						<span class="hamburger-box">
@@ -60,10 +60,10 @@
 				<nav class="main-menu">
 					<div class="container">
 						<ul class="list">
-							<li><a class="link" href="#reviews">О нас</a></li>
-							<li><a class="link" href="#certificates">Программы</a></li>
-							<li><a class="link" href="#team">Расписание</a></li>
-							<li><a class="link" href="#work">Контакты</a></li>
+							<li><a class="link" href="#about">О нас</a></li>
+							<li><a class="link" href="#programs">Программы</a></li>
+							<li><a class="link" href="#schedule">Расписание</a></li>
+							<li><a class="link" href="#contacts">Контакты</a></li>
 							<li class="visible-xs"><a href="tel:+77017178813" >+7 701 717-88-13</a></li>
 						</ul>
 					</div>
@@ -94,7 +94,7 @@
 			</div>
 		</section>
 
-		<section class="section section-program">
+		<section class="section section-program" id="about">
 			<div class="container">
 				<h2 class="section-title">Наша уникальная учебная программа включает:</h2>
 
@@ -226,7 +226,7 @@
 			</div>
 		</section>
 
-		<section class="section section-group">
+		<section class="section section-group" id="programs">
 			<div class="container">
 				<h2 class="section-title">Программы по группам</h2>
 				<div class="section-group-text">На занятиях дети узнают много интересного об информационных технологиях, о новых методах решения задач. Учатся разбивать крупные задачи на составные элементы и справляться с ними по отдельности. Выдвигают гипотезы, проверяют их и получают самые разные результаты. Привыкают работать в команде, слушать и слышать мнения других людей. Учатся мыслить не по шаблону и создавать нечто новое.</div>
@@ -253,7 +253,7 @@
 			</div>
 		</section>
 
-		<section class="section section-schedule">
+		<section class="section section-schedule" id="schedule">
 			<div class="container">
 				<h2 class="section-title">Расписание занятий</h2>
 				<table class="section-schedule-table" style="width:100%">
@@ -384,7 +384,7 @@
 			</div>
 		</section>
 
-		<section class="section-contact">
+		<section class="section-contact" id="contacts">
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A16b31feba4350593fab16d15d2b64ae9ea0e43452f5e879d1ddedaf240aad586&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
 					<div class="section-contact-content">
 						<h2 class="section-title">Наши контакты</h2>
@@ -423,25 +423,28 @@
 		
 	</div>
 	
-	<div class="modal" id="application">
-		<div class="modal-content">
-			<i class="modal-close"></i>
-			<h4 class="modal-title">Оставьте заявку на бесплатную консультацию специалиста</h4>
-			<form>
-				<input class="input" type="text" name="Имя" placeholder="Введите имя">
-				<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*">
-				<span class="error-message">Заполните это поле</span>
-				<input type="button" class="button form-submit" value="Отправить">
-			</form>
-		</div>
+	<div class="remodal remodal-small" data-remodal-id="thanks-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+
+      <div class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</div>
+      <div>Ваше сообщение успешно отправлено, наши менеджеры свяжутся с вами в ближайшее время</div>
 	</div>
 
-	<div class="modal" id="thanks">
-		<div class="modal-content">
-			<i class="modal-close"></i>
-			<h4 class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</h4>
+	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<div class="form">
+			<h5 class="form-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
+			<form action="Оставить заявку">
+			   <input type="hidden" name="info" value="">
+            <input type="text" class="input" name="Имя" placeholder="Введите имя">
+            <input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
+            <span class="error-message">Заполните это поле</span>
+				<button class="button ajax-submit" type="submit">Оставить заявку</button>
+			</form>
 		</div>
-	</div>
+
+   </div>
 	
 
 									

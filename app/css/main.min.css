@@ -391,7 +391,6 @@ body {
 
 .hamburger {
   margin-left: 20px;
-  margin-top: 5px;
   display: none;
   outline: none; }
 
@@ -427,6 +426,8 @@ body {
     color: #000; }
   .header .button {
     margin-left: 20px; }
+  .header .grow {
+    display: none; }
 
 .main-menu {
   text-align: center;
@@ -849,6 +850,8 @@ body {
     padding-right: 10px; }
   .header .hamburger {
     display: block; }
+  .header .grow {
+    display: block; }
   .main-menu {
     position: fixed;
     top: 107px;
@@ -858,7 +861,7 @@ body {
     z-index: 98;
     height: auto;
     display: none;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: white; }
     .main-menu ul {
       display: block;
       height: auto;
