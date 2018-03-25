@@ -5407,6 +5407,8 @@ html.remodal-is-locked {
     width: 100%;
     margin-bottom: 20px;
     border: 1px solid #ccc; }
+    .remodal .input + .error-message {
+      margin-top: -15px; }
   .remodal .button {
     margin: 0;
     width: 100%; }

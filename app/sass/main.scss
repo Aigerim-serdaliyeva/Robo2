@@ -218,13 +218,22 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			.input, .button {
+			& > .input, .button {
 				margin: 0 10px;
 			}
 			.button {
 				background-color: $green;
 			}
-		}
+      }
+      
+      &.has-age {
+         form {
+            flex-wrap: wrap;
+            & > * {
+               margin-bottom: 20px;
+            }
+         }
+      }
 	}
 	
 	&-polza {

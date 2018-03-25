@@ -85,6 +85,10 @@ $(document).ready(function() {
        }
    });
 
+   $(document).on('closing', '.remodal', function (e) {
+      $(".remodal .input").removeClass("error");
+  });
+
    $hamburger.click(function() {
      toggleHamburger();
      return false;

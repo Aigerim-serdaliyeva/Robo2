@@ -5,7 +5,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-
+   .section {
+      &-form {
+         &.has-age {
+            .section-form-title {
+               margin-bottom: 30px;
+            }
+         }
+      }
+   }
 }
 	/**/
 

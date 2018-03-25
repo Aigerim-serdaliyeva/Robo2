@@ -237,8 +237,18 @@ img {
   .input + .error-message, .textarea + .error-message {
     display: none;
     color: red;
-    margin: -15px 0 20px;
+    margin: -10px 0 20px;
     padding-left: 20px; }
+  .input-div, .textarea-div {
+    position: relative; }
+    .input-div .input, .textarea-div .input {
+      width: 100%; }
+    .input-div .error-message, .textarea-div .error-message {
+      position: absolute;
+      top: -webkit-calc(100% + 5px);
+      top: calc(100% + 5px);
+      margin-top: 0;
+      left: 0; }
   .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
     color: #868585;
     opacity: 1; }
@@ -545,10 +555,16 @@ body {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .section-form form .input, .section-form form .button {
+      .section-form form > .input, .section-form form .button {
         margin: 0 10px; }
       .section-form form .button {
         background-color: #1baf6f; }
+    .section-form.has-age form {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .section-form.has-age form > * {
+        margin-bottom: 20px; }
   .section-polza {
     padding-bottom: 0; }
     .section-polza .reviews {
@@ -812,6 +828,10 @@ body {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .section-form.has-age .section-form-title {
+    margin-bottom: 30px; } }
+
 /**/
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {

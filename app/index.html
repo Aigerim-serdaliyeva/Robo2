@@ -83,12 +83,13 @@
 					<div class="section-main-form-title">
 						Оставьте заявку и получите 
 						бесплатное пробное занятие
-					</div>
+               </div>
 					<form>
+                  <input type="hidden" name="info" value="Оставить заявку">
 						<input class="input" type="text" name="Имя" placeholder="Введите имя">
-						<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*">
+						<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
 						<span class="error-message">Заполните это поле</span>
-						<input type="button" class="button form-submit" value="Оставить заявку">
+						<input type="button" class="button ajax-submit" value="Оставить заявку">
 					</form>
 				</div>
 			</div>
@@ -136,10 +137,11 @@
 			<div class="container">
 				<h2 class="section-form-title">Приведите двоих детей и получите бесплатный пробный урок</h2>
 				<form>
-					<input class="input" type="text" name="Имя" placeholder="Введите имя">
-					<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*">
-					<span class="error-message">Заполните это поле</span>
-					<input type="button" class="button form-submit" value="Оставить заявку">
+               <input type="hidden" name="info" value="Приведите двоих детей и получите бесплатный пробный урок">
+               <input class="input" type="text" name="Имя" placeholder="Введите имя">
+               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
+                  <!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
 					<img src="./img/mini-robot.png" class="section-form-img hidden-xs" alt="">
 				</form>
 			</div>
@@ -206,10 +208,11 @@
 			<div class="container">
 				<h2 class="section-form-title">Оставьте заявку на бесплатную консультацию со специалистом</h2>
 				<form>
+               <input type="hidden" name="info" value="Оставьте заявку на бесплатную консультацию со специалистом">
 					<input class="input" type="text" name="Имя" placeholder="Введите имя">
-					<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*">
-					<span class="error-message">Заполните это поле</span>
-					<input type="button" class="button form-submit" value="Оставить заявку">
+					<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
+					<!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
 					<img src="./img/mini-robot.png" class="section-form-img hidden-xs" alt="">
 				</form>
 			</div>
@@ -370,16 +373,17 @@
 			</div>
 		</section>
 
-		<section class="section-form">
+		<section class="section-form has-age">
 			<div class="container">
 				<h2 class="section-form-title">Запишите ребенка на бесплатное пробное занятие прямо сейчас!</h2>
 				<form>
-					<input class="input" type="text" name="Имя" placeholder="Имя ребенка">
-					<input class="input age" type="text" name="Возраст" placeholder="Возраст*">
-					<input class="input phone" type="tel" name="Телефон" placeholder="Ваш номер телефона*">
-					<span class="error-message">Заполните это поле</span>
-					<input type="button" class="button form-submit" value="Оставить заявку">
-					<img src="./img/mini-robot.png" class="section-form-img hidden-xs" alt="">
+               <input type="hidden" name="info" value="Запишите ребенка на бесплатное пробное занятие прямо сейчас!">
+					<input class="input" type="text" name="Имя ребенка" placeholder="Имя ребенка">
+					<input class="input age" type="text" name="Возраст" placeholder="Возраст*" required>
+					<input class="input phone" type="tel" name="Телефон" placeholder="Ваш номер телефона*" required>
+					<!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
+					<img src="./img/mini-robot.png" class="section-form-img visible-lg" alt="">
 				</form>
 			</div>
 		</section>
@@ -405,17 +409,12 @@
 						<img src="./img/logo.png" alt="">
 					</div>
 					<div class="footer-contact">
-						<a href="#" class="button modal-open" data-id="application">Заказать звонок</a>
+						<a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
 					</div>
 					<div class="footer-content-comand">
 						Разработано командой <br>
 						<img src="./img/MarketingTime.png" alt="">
 					</div>
-					<!-- <button class="hamburger hamburger--elastic hamburger--accessible">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</button> -->
 					
 				</div>
 			</div>
@@ -436,7 +435,7 @@
 		<div class="form">
 			<h5 class="modal-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
 			<form action="Оставить заявку">
-			   <input type="hidden" name="info" value="">
+			   <input type="hidden" name="info" value="Оставить заявку">
             <input type="text" class="input" name="Имя" placeholder="Введите имя">
             <input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
             <span class="error-message">Заполните это поле</span>
