@@ -1,168 +1,231 @@
-$(function() {
+$(document).ready(function() {
 
-    var $wnd = $(window);
-    var $top = $(".page-top");
-    var $html = $("html, body");
-    var $header = $(".section-header");
-    var $menu = $(".main-menu");
-    var $thanks = $("#thanks");
+   var $wnd = $(window);
+   var $top = $(".page-top");
+   var $html = $("html, body");
+   var $header = $(".header");
+   var $menu = $(".main-menu");
+   var utms = parseGET();
+   var headerHeight = 142;
+   var thanks = $('[data-remodal-id="thanks-modal"]').remodal();
+   var $hamburger = $(".hamburger");
 
-    
+   if(utms && Object.keys(utms).length > 0) {
+       window.sessionStorage.setItem('utms', JSON.stringify(utms));
+   } else {
+       utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
+   }
 
-    // $wnd.scroll(function() { onscroll(); });
+  if($wnd.width() < 768) {
+     headerHeight = 107;
+  }
 
-    var menuTop = $menu.offset().top;
+   $wnd.scroll(function() { onscroll(); });
 
-    var onscroll = function() {
+   var onscroll = function() {
+       if($wnd.scrollTop() > $wnd.height()) {
+           $top.addClass('active');
+       } else {
+           $top.removeClass('active');
+       }
 
-        if($wnd.scrollTop() > $wnd.height()) {
-            $top.addClass('active');
-        } else {
-            $top.removeClass('active');
-        }
+     if($wnd.scrollTop() > 0) {
+           $header.addClass('scrolled');
+     } else {
+           $header.removeClass('scrolled');
+     }
 
-        var scrollPos = $wnd.scrollTop() + 88 + 20;
+     var scrollPos = $wnd.scrollTop() + headerHeight;
 
-        $menu.find("a").each(function() {
-            var link = $(this);
-            var id = link.attr('href');
-            var section = $(id);
-            var sectionTop = section.offset().top;
+       $menu.find(".link").each(function() {
+           var link = $(this);
+           var id = link.attr('href');
+           var section = $(id);
+           
+           if(section && section.length > 0) {
+               var sectionTop = section.offset().top;
 
-            if(sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
-                link.addClass('active');
-            } else {
-                link.removeClass('active');
-            }
-        });
-    }
+               if(sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
+                   link.addClass('active');
+               } else {
+                   link.removeClass('active');
+               }
+           }
+       });
+   }
 
-    // onscroll();
+   onscroll();
 
-    $top.click(function() {
-        $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-    });
+   $(".main-menu .link").click(function(e) {
+       e.preventDefault();
+       var $href = $(this).attr('href');
+       if($href.length > 0 && $($href).length > 0) {
+           var top = $($href).offset().top - headerHeight;
+           $html.stop().animate({ scrollTop: top }, "slow", "swing");
+           if($wnd.width() <= 991) {
+              toggleHamburger();
+           }
+       }
+   });
 
-    $(".hamburger").click(function() {
-        $this = $(this);
+   $top.click(function() {
+       $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
+   });
 
-        if(!$this.hasClass("is-active")) {
-            $this.addClass('is-active');
-            $menu.slideDown('700');
-        } else {
-            $this.removeClass('is-active');
-            $menu.slideUp('700');
-        }
+   $("input[type=tel]").mask("+7 (999) 999 99 99", {
+       completed: function() {
+           $(this).removeClass('error');
+       }
+   }); 
 
-        return false;
-    });  
+   $("input:required, textarea:required").keyup(function() {
+       var $this = $(this);
+       if($this.attr('type') != 'tel') {
+           checkInput($this);
+       }
+   });
 
-    $(".main-menu a").click(function(e) {
-        e.preventDefault();
-        var $href = $(this).attr('href');
-        if($href.length > 0) {
-            var dh = $wnd.outerWidth() < 992 ? 83 : 35;
-            var top = $href.length == 1 ? 0 : $($href).offset().top - dh;
-            $html.stop().animate({ scrollTop: top }, "slow", "swing");
-        }
-    });
+   $hamburger.click(function() {
+     toggleHamburger();
+     return false;
+  });  
 
-    $(".modal-open").click(function() {
-        var id = $(this).data('id');
-        $('#'+id).fadeIn(500);
-        return false;
-    });
+  function toggleHamburger() {
+     $this = $hamburger;
+     if(!$this.hasClass("is-active")) {
+        $this.addClass('is-active');
+        $menu.slideDown('700');
+     } else {
+        $this.removeClass('is-active');
+        $menu.slideUp('700');
+     }
+  }
 
-    $(".modal").click(function() {
-        var $modal = $(this);
-        closeModal($modal);
-    });
+  $(".age").mask("99");  
 
-    $(".modal-content").click(function(e) {
-        e.stopPropagation();
-    });
-
-    $(".modal-close").click(function() {
-        var $modal = $(this).closest('.modal');
-        closeModal($modal);
-    });
-
-    function closeModal($modal) {
-        $modal.fadeOut(500);
-
-        var $form = $modal.find('form');
-        if($form.length > 0) $form[0].reset();
-
-        var $phone = $form.find('.phone');
-        if($phone.length > 0) $phone.removeClass('error');
-    }
-
-    $(".form-submit").click(function(e) {
-        e.preventDefault();
-        
-        var $form = $(this).closest('form');
-        var $phone = $form.find('.phone');
-
-        if($phone.length && !$phone.val()) {
-            $phone.addClass('error');
-        } else {
-            $.ajax({
-                type: "POST",
-                url: "/mail.php",
-                data: $form.serialize()
-            }).done(function() {                
-            });
-
-            $(this).closest('.modal').fadeOut(500);
-            $phone.removeClass('error');
-            $form[0].reset();
-            $thanks.fadeIn(500);
-        }
-    });
-
-    $(".phone").mask("+7 (999) 999 99 99", {
-        completed: function() {
-            $(this).removeClass('error');
-        }
-    });  
-    
-    $(".age").mask("99");  
-
-    setTimeout(function() {
-        $(".program-content").equalHeights();
-
-    }, 2000);
+  setTimeout(function() {
+      // $(".program-content").equalHeights();
+  }, 2000);
 
 
-    $(".section-program-carousel").owlCarousel({
-        nav: false,
-        dots: true,
-        loop: true,
-        smartSpeed: 500,
-        margin: 30,
-        navText: ['', ''],
-        responsive: {
-            0: { items: 1 },
-            480: { items: 2 },
-            768: { items: 3 },        
-            992: { margin: 50 },
-        },
-    });
+  $(".section-program-carousel").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          768: { items: 3 },        
+          992: { margin: 50 },
+      },
+  });
 
-    $(".section-zaniyatie-carousel").owlCarousel({
-        nav: false,
-        dots: true,
-        loop: true,
-        smartSpeed: 500,
-        margin: 30,
-        navText: ['', ''],
-        responsive: {
-            0: { items: 1 },
-            480: { items: 2 },
-            768: { items: 3 },        
-            992: { margin: 50 },
-        },
-    });
+  $(".section-zaniyatie-carousel").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          768: { items: 3 },        
+          992: { margin: 50 },
+      },
+  });
+
+  $(".ajax-submit").click(function(e) {
+       e.preventDefault();
+       
+       var $form = $(this).closest('form');
+       var $requireds = $form.find(':required');
+       var formValid = true;
+
+       $requireds.each(function() {
+           $elem = $(this);
+
+           if(!$elem.val() || !checkInput($elem)) {
+               $elem.addClass('error');
+               formValid = false;
+           }
+       });
+
+       var data = $form.serialize();
+
+       if(Object.keys(utms).length > 0) {
+           for(var key in utms) {
+               data += '&' + key + '=' + utms[key];
+           }
+       } else {
+           data += '&utm=Прямой переход'
+       } 
+
+       if(formValid) {
+           $.ajax({
+               type: "POST",
+               url: "/mail.php",
+               data: data
+           }).done(function() {                
+           });
+
+           $requireds.removeClass('error');
+           $form[0].reset();
+           thanks.open();
+       }
+  });
+
 
 });
+
+function validateEmail(email) {
+   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   return re.test(email);
+}
+
+function checkInput($input) {
+   if($input.val()) {
+       if($input.attr('type') != 'email' || validateEmail($input.val())) {
+           $input.removeClass('error');
+           return true;
+       }
+   }
+   return false;
+}
+   
+function parseGET(url){
+   var namekey = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+   if(!url || url == '') url = decodeURI(document.location.search);
     
+   if(url.indexOf('?') < 0) return Array(); 
+   url = url.split('?'); 
+   url = url[1]; 
+   var GET = {}, params = [], key = []; 
+    
+   if(url.indexOf('#')!=-1){ 
+       url = url.substr(0,url.indexOf('#')); 
+   } 
+   
+   if(url.indexOf('&') > -1){ 
+       params = url.split('&');
+   } else {
+       params[0] = url; 
+   }
+   
+   for (var r=0; r < params.length; r++){
+       for (var z=0; z < namekey.length; z++){ 
+           if(params[r].indexOf(namekey[z]+'=') > -1){
+               if(params[r].indexOf('=') > -1) {
+                   key = params[r].split('=');
+                   GET[key[0]]=key[1];
+               }
+           }
+       }
+   }
+
+   return (GET);    
+};
