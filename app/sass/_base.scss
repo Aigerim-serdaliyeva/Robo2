@@ -155,7 +155,9 @@ img {
 
 	&+.error-message {
 		display: none;
-		color: red;
+      color: red;
+      margin: -15px 0 20px;
+      padding-left: 20px;
 	}
 
 	&::-webkit-input-placeholder {

@@ -236,7 +236,9 @@ img {
       display: block; }
   .input + .error-message, .textarea + .error-message {
     display: none;
-    color: red; }
+    color: red;
+    margin: -15px 0 20px;
+    padding-left: 20px; }
   .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
     color: #868585;
     opacity: 1; }
