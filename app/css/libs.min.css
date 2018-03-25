@@ -5391,6 +5391,33 @@ html.remodal-is-locked {
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0");
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); }
 
+.owl-carousel {
+  padding: 0 50px; }
+  .owl-carousel .owl-dots {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .owl-carousel .owl-dots.disabled {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  .owl-carousel .owl-dot {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #79eab9 !important;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px; }
+    .owl-carousel .owl-dot.active {
+      background-color: #1baf6f !important; }
+
 .remodal {
   text-align: left; }
   .remodal-close {
