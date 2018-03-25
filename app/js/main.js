@@ -108,8 +108,8 @@ $(document).ready(function() {
   $(".age").mask("99");  
 
   setTimeout(function() {
-      // $(".program-content").equalHeights();
-  }, 2000);
+      $(".program-content").equalHeights();
+  }, 000);
 
 
   $(".section-program-carousel").owlCarousel({
