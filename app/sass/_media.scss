@@ -34,33 +34,12 @@
 	}
 
 	.section {
-		// padding: 25px 0 30px 0;
 		&-title {
 			font-size: 30px;
 			margin-bottom: 30px;
 		}
 	
 		&-main {
-			// padding-top: 100px;
-			// padding-bottom: 15px;
-			// &-title {
-			// 	font-size: 30px;
-			// 	margin-bottom: 40px;
-			// }
-			// &-form {
-			// 	padding: 15px 15px 25px 0px;
-			// 	margin-left: 50px;
-			// 	&-title {
-			// 		font-size: 20px;
-			// 		margin-bottom: 10px;
-			// 	}
-			// 	form {
-			// 		width: 170px;
-			// 		& > * {
-			// 			margin-bottom: 8px;
-			// 		}
-			// 	}
-			// }
 		}
 
 		&-form {
@@ -89,35 +68,7 @@
 					margin-bottom: 10px;
 				}
 			}
-		}		
-
-		// &-form {
-		// 	padding-top: 20px;
-		// 	form {
-		// 		.input, .button {
-		// 			margin: 0 5px;
-		// 		}
-		// 	}
-		// }
-
-		// &-contact {
-		// 	position: relative;
-		// 	.section-main-form {
-		// 		.section-title {
-		// 			padding-top: 0;
-		// 		}
-		// 	}
-		// 	form {
-		// 		width: 300px;
-		// 	}
-		// 	&-title {
-		// 		font-size: 18px;
-		// 	}
-		// 	&-container {
-		// 		top: 50px;
-		// 	}
-		// }
-
+		}				
 	}
 	.footer {
 		&-content {
@@ -133,10 +84,6 @@
 				margin-bottom: 10px;
 			}
 		}
-		// .button {
-		// 	padding-left: 10px;
-		// 	padding-right: 10px;
-		// }
 	}
 
 	.more-modal {
@@ -165,7 +112,6 @@
 	}
 
 	.page-wrapper {
-		// padding-top: 83px;
 	}
 
 	.header {
@@ -201,7 +147,6 @@
 			}
 
 			a {
-				// color: $default_text_color;
 				&:hover, &.active {
 					color: $accent;
 				}
@@ -292,32 +237,7 @@
 			.section-contact-block {
 				
 			}
-		}
-		// &-group {
-		// 	.section-title {
-		// 		margin-bottom: 15px;
-		// 	}
-		// 	&-text {
-		// 		font-size: 16px;
-		// 		margin-bottom: 25px;
-		// 	}
-		// 	.groups {
-		// 		display: block;
-		// 	}
-		// 	.group {
-		// 		&::before {
-		// 			content: "";
-		// 			border-top: 4px solid $green;
-		// 			display: block;
-		// 			margin-bottom: 15px;
-		// 		}
-		// 		width: 100%;
-		// 		display: block;
-		// 		&-text {
-		// 			max-width: 700px;
-		// 		}
-		// 	}
-		// }
+		}		
 	}
 	
 
@@ -352,11 +272,6 @@
 			&-title {
 				font-size: 28px;
 			}
-			// &-form {
-			// 	&-title {
-			// 		font-size: 20px;
-			// 	}
-			// }
 		}
 		&-form {
 			.input, .button {
