@@ -8,6 +8,8 @@ $(document).ready(function() {
    var utms = parseGET();
    var headerHeight = 142;
    var thanks = $('[data-remodal-id="thanks-modal"]').remodal();
+   var more = $('[data-remodal-id="more-modal"]').remodal();
+   var $more = $('[data-remodal-id="more-modal"]');
    var $hamburger = $(".hamburger");
 
    if(utms && Object.keys(utms).length > 0) {
@@ -71,6 +73,14 @@ $(document).ready(function() {
    $top.click(function() {
        $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
    });
+
+   $(".more-modal-open").click(function() {
+        var $item = $(this).closest(".program");
+        $more.find('.more-modal-image img').attr('src', '/img/' + $item.data('image'));
+        $more.find('.more-modal-title').html($item.data('title'));
+        $more.find('.more-modal-text').html($item.data('text'));
+        more.open();
+   })
 
    $("input[type=tel]").mask("+7 (999) 999 99 99", {
        completed: function() {

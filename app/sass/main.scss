@@ -547,4 +547,30 @@ body {
 	}
 }
 
+.more-modal {
+	&-content {
+		display: flex;
+		padding: 30px;
+	}
+
+	&-image {
+		flex-shrink: 0;
+		margin-right: 30px;
+		width: 360px;
+
+		img {
+			margin-bottom: 20px;
+		}
+	}
+
+	&-title {
+		font-size: 24px;
+		font-weight: 900;
+	}
+
+	&-text {
+		font-size: 18px;
+	}
+}
+
 @import "media"; // Всегда в конце

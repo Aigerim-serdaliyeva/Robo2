@@ -14,6 +14,14 @@
          }
       }
    }
+
+   .more-modal {
+	   &-image {
+		   img {
+			   width: 293px;
+		   }
+	   }
+   }
 }
 	/**/
 
@@ -81,7 +89,7 @@
 					margin-bottom: 10px;
 				}
 			}
-		}
+		}		
 
 		// &-form {
 		// 	padding-top: 20px;
@@ -129,6 +137,21 @@
 		// 	padding-left: 10px;
 		// 	padding-right: 10px;
 		// }
+	}
+
+	.more-modal {
+		&-content {
+			padding: 0;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&-image {
+			margin-bottom: 10px;
+			img {
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
 	/**/

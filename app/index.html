@@ -98,24 +98,24 @@
 				<h2 class="section-title">Наша уникальная учебная программа включает:</h2>
 
 				<div class="owl-carousel section-program-carousel">
-					<div class="program">
+					<div class="program" data-image="program-1.jpg" data-title="Основы робототехники" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
 						<img src="./img/program-1.jpg" alt="">
 						<div class="program-content">
 							<h3 class="program-title">Основы робототехники</h3>
 							<div class="program-text">Научим Вашего ребенка конструировать
 									роботов уже через 10 занятий!</div>
 						</div>
-						<button class="button">Подробнее</button>
+						<button class="button more-modal-open">Подробнее</button>
 					</div>
-					<div class="program">
+					<div class="program" data-image="program-2.jpg" data-title="Основы программирования" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
 						<img src="./img/program-2.jpg" alt="">
 						<div class="program-content">
 							<h3 class="program-title">Основы программирования</h3>
 							<div class="program-text">Самые передовые учебные программы.</div>
 						</div>
-						<button class="button">Подробнее</button>
+						<button class="button more-modal-open">Подробнее</button>
 					</div>
-					<div class="program">
+					<div class="program" data-image="program-3.jpg" data-title="Изучение физики и математики на практике" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
 						<img src="./img/program-3.jpg" alt="">
 						<div class="program-content">
 							<h3 class="program-title">Изучение физики и 
@@ -124,37 +124,9 @@
 									не будут абстракцией и станут намного
 									понятнее.</div>
 						</div>
-						<button class="button">Подробнее</button>
-               </div>
-               <div class="program">
-						<img src="./img/program-1.jpg" alt="">
-						<div class="program-content">
-							<h3 class="program-title">Основы робототехники</h3>
-							<div class="program-text">Научим Вашего ребенка конструировать
-									роботов уже через 10 занятий!</div>
-						</div>
-						<button class="button">Подробнее</button>
-					</div>
-					<div class="program">
-						<img src="./img/program-2.jpg" alt="">
-						<div class="program-content">
-							<h3 class="program-title">Основы программирования</h3>
-							<div class="program-text">Самые передовые учебные программы.</div>
-						</div>
-						<button class="button">Подробнее</button>
-					</div>
-					<div class="program">
-						<img src="./img/program-3.jpg" alt="">
-						<div class="program-content">
-							<h3 class="program-title">Изучение физики и 
-									математики на практике  </h3>
-							<div class="program-text">Формулы и физические законы больше
-									не будут абстракцией и станут намного
-									понятнее.</div>
-						</div>
-						<button class="button">Подробнее</button>
-					</div>
-				</div>
+						<button class="button more-modal-open">Подробнее</button>
+               		</div>
+                </div>
 			</div>
 		</section>
 
@@ -448,23 +420,41 @@
 		
 	</div>
 	
+	<div class="remodal" data-remodal-id="more-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+
+		<div class="more-modal-content">
+			<div class="more-modal-image">
+				<img src="./img/program-1.jpg" alt="">
+				<h3 class="more-modal-title">Основы робототехники</h3>
+			</div>
+			<div class="more-modal-text">
+				
+			</div>
+		</div>
+	</div>
+
 	<div class="remodal remodal-small" data-remodal-id="thanks-modal" data-remodal-options="hashTracking: true">
 		<button data-remodal-action="close" class="remodal-close"></button>
 
-      <div class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</div>
-      <div>Ваше сообщение успешно отправлено, наши менеджеры свяжутся с вами в ближайшее время</div>
+      <div class="modal-title">Спасибо!</div>
+      <div class="modal-text">за Вашу заявку, наш менеджер 
+		свяжется с Вами в ближайшее время!</div>
+		<button class="button" data-remodal-action="close">Вернуться на главную</button>
 	</div>
 
 	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		
 		<div class="form">
-			<h5 class="modal-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
+			<h5 class="modal-title">Заказать звонок</h5>
+			<div class="modal-text">Оставьте заявку и наш менеджер 
+				свяжется с Вами в ближайшее время</div>
 			<form action="Оставить заявку">
 			   <input type="hidden" name="info" value="Оставить заявку">
-            <input type="text" class="input" name="Имя" placeholder="Введите имя">
-            <input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
-            <span class="error-message">Заполните это поле</span>
+				<input type="text" class="input" name="Имя" placeholder="Введите имя">
+				<input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
+				<span class="error-message">Заполните это поле</span>
 				<button class="button ajax-submit" type="submit">Оставить заявку</button>
 			</form>
 		</div>

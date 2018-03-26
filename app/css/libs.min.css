@@ -5422,14 +5422,25 @@ html.remodal-is-locked {
   text-align: left; }
   .remodal-close {
     left: auto;
-    right: 0; }
+    right: 0;
+    width: 50px; }
+    .remodal-close:before {
+      font-size: 50px;
+      width: 50px;
+      line-height: 50px;
+      color: #ff6600; }
+  .remodal .modal-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px; }
   .remodal .modal-title {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px; }
   .remodal.remodal-small {
-    max-width: 450px; }
+    max-width: 450px;
+    background-color: #ffa366; }
   .remodal .input {
     width: 100%;
     margin-bottom: 20px;
@@ -5439,3 +5450,7 @@ html.remodal-is-locked {
   .remodal .button {
     margin: 0;
     width: 100%; }
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 80%; } }
