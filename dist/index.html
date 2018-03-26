@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>RobboTrek</title>
+	<meta name="description" content="">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+		<div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<h3 class="logo-text">
+						Клуб робототехники для детей в Актобе
+					</h3>
+					<div class="logo">
+						<img src="./img/logo.png" alt="">
+					</div>
+	
+					<div class="grow"></div>
+
+					<div class="header-contact hidden-xxs">
+						<a href="tel:+77017178813" class="phone-link hidden-xs">+7 701 717-88-13</a>
+						<a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
+					</div>
+					<button class="hamburger hamburger--elastic hamburger--accessible">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+				<nav class="main-menu">
+					<div class="container">
+						<ul class="list">
+							<li><a class="link" href="#about">О нас</a></li>
+							<li><a class="link" href="#programs">Программы</a></li>
+							<li><a class="link" href="#schedule">Расписание</a></li>
+							<li><a class="link" href="#contacts">Контакты</a></li>
+							<li class="visible-xs"><a href="tel:+77017178813" >+7 701 717-88-13</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="section section-main">
+			<div class="container">
+				<h1 class="section-main-title">
+					Откроем для Вашего ребенка профессию будущего 
+					в клубе робототехники "РобоТрек"
+				</h1>
+				<div class="section-main-form">
+					<div class="section-main-form-title">
+						Оставьте заявку и получите 
+						бесплатное пробное занятие
+               </div>
+					<form>
+                  <input type="hidden" name="info" value="Оставить заявку">
+						<input class="input" type="text" name="Имя" placeholder="Введите имя">
+						<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
+						<span class="error-message">Заполните это поле</span>
+						<input type="button" class="button ajax-submit" value="Оставить заявку">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-program" id="about">
+			<div class="container">
+				<h2 class="section-title">Наша уникальная учебная программа включает:</h2>
+
+				<div class="owl-carousel section-program-carousel">
+					<div class="program" data-image="program-1.jpg" data-title="Основы робототехники" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
+						<img src="./img/program-1.jpg" alt="">
+						<div class="program-content">
+							<h3 class="program-title">Основы робототехники</h3>
+							<div class="program-text">Научим Вашего ребенка конструировать
+									роботов уже через 10 занятий!</div>
+						</div>
+						<button class="button more-modal-open">Подробнее</button>
+					</div>
+					<div class="program" data-image="program-2.jpg" data-title="Основы программирования" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
+						<img src="./img/program-2.jpg" alt="">
+						<div class="program-content">
+							<h3 class="program-title">Основы программирования</h3>
+							<div class="program-text">Самые передовые учебные программы.</div>
+						</div>
+						<button class="button more-modal-open">Подробнее</button>
+					</div>
+					<div class="program" data-image="program-3.jpg" data-title="Изучение физики и математики на практике" data-text="На сегодняшний день робототехника не введена в общеобразовательную программу. При этом программирование и конструирование являются важными знаниями для ребенка, позволяющие в будущем не просто решать сложные задачи, но и выбрать перспективный род профессиональной деятельности.Благодаря разработанной нами программе обучения школьники смогут получать дополнительные знания. При этом обучение будет проходить в увлекательной форме, что способствует усвоению важного и полезного материала. Посещать курсы могут дети от 6 лет.">
+						<img src="./img/program-3.jpg" alt="">
+						<div class="program-content">
+							<h3 class="program-title">Изучение физики и 
+									математики на практике  </h3>
+							<div class="program-text">Формулы и физические законы больше
+									не будут абстракцией и станут намного
+									понятнее.</div>
+						</div>
+						<button class="button more-modal-open">Подробнее</button>
+               		</div>
+                </div>
+			</div>
+		</section>
+
+		<section class="section section-prohodit">
+			<div class="container">
+				<h2 class="section-title">
+					Как проходят наши занятия
+				</h2>				
+
+				<div class="section-prohodit-texts">
+						<div class="section-prohodit-text">
+							<div class="section-prohodit-title">Старт</div>					
+						</div>
+						<div class="section-prohodit-text">
+							<h3 class="section-prohodit-title"><span class="accent">1. </span>Теория</h3>
+							Преподаватель с помощью презентаций и видеоматериалов знакомит детей с увлекательным миром робототехники.
+							Ваш ребенок узнаёт в доступной игровой форме, как работают двигатель, датчики движения, положения, расстояния и звука. Законы физики и математические задачи становятся для него простыми и интересными.   
+						</div>
+						<div class="section-prohodit-text">
+							<h3 class="section-prohodit-title"><span class="accent">2. </span>Конструирование</h3>
+							Сборка собственного робота. Средством обучения являются инновационные конструкторы южнокорейского бренда “HUNA-MRT”.     
+						</div>
+						<div class="section-prohodit-text">
+							<h3 class="section-prohodit-title"><span class="accent">3. </span>Программирование</h3>
+							Ваш ребёнок переходит к освоению программирования, пока в графической среде. Дети учатся наделять интеллектом своих роботов.
+		
+		Собирая и конструируя, Ваш ребенок изучает основы механики, кинематики, мехатроники.    
+						</div>
+						<div class="section-prohodit-text">
+							<h3 class="section-prohodit-title"><span class="accent">4. </span>Ваш ребенок счастлив,
+									видя результат своего труда.  </h3>
+									Он приобретает базовые навыки программирования на языке Си+.
+		Наша школа закладывает прочный фундамент благополучия Вашего ребенка.  
+						</div>
+				</div>
+			</div>
+
+			<div class="section-prohodit-content">
+				
+				<svg id="_3_Study_Progress" data-name="3 Study Progress" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1398">
+					<metadata><?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?>
+				  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+					 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+						<rdf:Description rdf:about=""/>
+					 </rdf:RDF>
+				  </x:xmpmeta>	 
+				  <?xpacket end="w"?></metadata>
+				  <defs>
+					  <style>
+						.cls-1, .cls-9 {
+						  fill: #1baf6f;
+						}
+				  
+						.cls-1, .cls-4 {
+						  fill-rule: evenodd;
+						}
+				  
+						.cls-2, .cls-4, .cls-5 {
+						  fill: #f60;
+						}
+				  
+						.cls-2, .cls-8 {
+						  stroke: #f60;
+						  stroke-width: 10px;
+						}
+				  
+						.cls-3 {
+						  font-size: 36px;
+						}
+				  
+						.cls-3, .cls-5, .cls-6, .cls-7, .cls-9 {
+						  font-family: Roboto;
+						}
+				  
+						.cls-3, .cls-5, .cls-6, .cls-9 {
+						  font-weight: 800;
+						}
+				  
+						.cls-5 {
+						  font-size: 90px;
+						}
+				  
+						.cls-6 {
+						  font-size: 30px;
+						}
+				  
+						
+				  
+						.cls-8 {
+						  fill: none;
+						}
+				  
+						.cls-9 {
+						  font-size: 120.09px;
+						}
+					  </style>
+					</defs>
+					<image id="Robots_hand" data-name="Robots hand" x="1041" y="519" width="465" height="325" xlink:href="data:img/png;base64,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"/>
+					<path id="Прямоугольник_8" data-name="Прямоугольник 8" class="cls-1" d="M1441.38,550.628l404.68-103.846,7.54,28.205L1448.92,578.833Z" transform="translate(0 -15)"/>
+					<path id="Прямоугольник_8_копия_2" data-name="Прямоугольник 8 копия 2" class="cls-1" d="M1516.01,531.8L1920.47,428l7.54,28.191-404.46,103.8Z" transform="translate(0 -15)"/>
+					<image id="Robots_hand_копия" data-name="Robots hand копия" x="10" y="334" width="544" height="182" xlink:href="data:img/png;base64,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"/>
+					<path id="Прямоугольник_8_копия" data-name="Прямоугольник 8 копия" class="cls-1" d="M64.568,479.543L-313.607,657.119l12.14,26.553L76.707,506.1Z" transform="translate(0 -15)"/>
+					<g id="Start">
+					  <circle id="Эллипс_2" data-name="Эллипс 2" class="cls-2" cx="570" cy="87" r="82"/>
+					  <text id="Старт" class="cls-3" x="518.398" y="94.203">Старт</text>
+					</g>
+					<path id="Фигура_2" data-name="Фигура 2" class="cls-4" d="M649,119.908l3.022-7.915L1085,230.092l-3.02,7.915Z" transform="translate(0 -15)"/>
+					<g id="_1" data-name="1">
+					  <text id="_1-2" data-name="1" class="cls-5" x="1127.399" y="283.204">1</text>
+					  <text id="Теория" class="cls-6" x="1268.177" y="203.488">Теория</text>
+					  <text id="Преподаватель_с_помощью_презентаций_и_видеоматериалов_знакомит_" data-name="Преподаватель с помощью презентаций и видеоматериалов знакомит " class="cls-7"  transform="translate(1268.344, 230.204)">Преподаватель с помощью 
+							<tspan x="0" dy="21.6">презентаций и </tspan>
+							<tspan x="0" dy="21.6">видеоматериалов знакомит </tspan>
+							<tspan x="0" dy="21.6">детей с увлекательным </tspan>
+							<tspan x="0" dy="21.6">миром робототехники.</tspan>
+						  </text>
+					  <text id="Ваш_ребенок_узнаёт_в_доступной_игровой_форме_как_работают_двиг" data-name="Ваш ребенок узнаёт в доступной игровой форме, как работают двиг" class="cls-7" 
+					  transform="translate(1071.492, 362.961)">Ваш ребенок узнаёт в доступной игровой форме, 
+					  <tspan x="0" dy="21.6">как работают двигатель, датчики движения, </tspan>
+					  <tspan x="0" dy="21.6">положения, расстояния и звука. Законы физики и </tspan>
+					  <tspan x="0" dy="21.6">математические задачи становятся для него </tspan>
+					  <tspan x="0" dy="21.6">простыми и интересными.</tspan>					  
+					     </text>
+					  <path id="Прямоугольник_7" data-name="Прямоугольник 7" class="cls-4" d="M1088.29,199.052l14.4,12.393-13.04,15.16-14.4-12.392Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия" data-name="Прямоугольник 7 копия" class="cls-4" d="M1118.13,178.762l8.42,17-17.68,9.483-8.42-17Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_2" data-name="Прямоугольник 7 копия 2" class="cls-4" d="M1149.87,169.967l3.43,18.932-19.56,4.583-3.43-18.932Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_3" data-name="Прямоугольник 7 копия 3" class="cls-4" d="M1069.27,222.093l17.61,8.7-7.83,18.529-17.6-8.7Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_4" data-name="Прямоугольник 7 копия 4" class="cls-4" d="M1061.16,251.633l19.24,2.685-1.52,20.052-19.24-2.685Z" transform="translate(0 -15)"/>
+					  <circle id="Эллипс_3" data-name="Эллипс 3" class="cls-8" cx="1154" cy="251" r="82"/>
+					</g>
+					<path id="Фигура_3" data-name="Фигура 3" class="cls-4" d="M1079.37,294l6.64,4.9L611.627,541l-6.637-4.9Z" transform="translate(0 -15)"/>
+					<g id="_2" data-name="2">
+					  <text id="_2-2" data-name="2" class="cls-5" transform="translate(527.72 628.138)">2</text>
+					  <text id="Конструирование" class="cls-6" transform="translate(668.387 548.482)">Конструирование</text>
+					  <text id="Сборка_собственного_робота._Средством_обучения_являются_инновац" data-name="Сборка собственного робота. Средством обучения являются инновац" class="cls-7" transform="translate(668.552 575.178)">Сборка собственного робота. 
+							<tspan x="0" dy="21.6">Средством обучения являются </tspan>
+							<tspan x="0" dy="21.6">инновационные конструкторы</tspan>
+							<tspan x="0" dy="21.6">южнокорейского бренда “HUNA-MRT”.</tspan>						   
+						       </text>
+					  <path id="Прямоугольник_7-2" data-name="Прямоугольник 7" class="cls-4" d="M488.643,544.062l14.391,12.383L490,571.594l-14.391-12.383Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия-2" data-name="Прямоугольник 7 копия" class="cls-4" d="M518.462,523.786l8.408,16.984L509.2,550.246,500.8,533.262Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_2-2" data-name="Прямоугольник 7 копия 2" class="cls-4" d="M550.173,515l3.431,18.918L534.057,538.5l-3.431-18.918Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_3-2" data-name="Прямоугольник 7 копия 3" class="cls-4" d="M469.639,567.085l17.593,8.689-7.82,18.516L461.819,585.6Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_4-2" data-name="Прямоугольник 7 копия 4" class="cls-4" d="M461.529,596.6l19.225,2.683-1.516,20.037-19.225-2.682Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_5" data-name="Прямоугольник 7 копия 5" class="cls-4" d="M588.293,520.534l-5.841,18.756-19.766-4.809,5.841-18.758Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_6" data-name="Прямоугольник 7 копия 6" class="cls-4" d="M619.652,538.772l-12.1,15.932-17.2-11.459,12.1-15.932Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_7" data-name="Прямоугольник 7 копия 7" class="cls-4" d="M640.988,564.766L624.84,576.119l-12.819-15.9,16.147-11.353Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_8" data-name="Прямоугольник 7 копия 8" class="cls-4" d="M650.739,597.342l-19,5.2L624.915,583.4l19-5.2Z" transform="translate(0 -15)"/>
+					  <ellipse id="Эллипс_3-2" data-name="Эллипс 3" class="cls-8" cx="554.313" cy="595.968" rx="81.938" ry="81.938"/>
+					</g>
+					<path id="Фигура_4" data-name="Фигура 4" class="cls-4" d="M577.013,687.759l5.548-8.765L986.987,935.241l-5.548,8.765Z" transform="translate(0 -15)"/>
+					<g id="_3" data-name="3">
+					  <text id="_3-2" data-name="3" class="cls-5" transform="translate(1040.719 987.138)">3</text>
+					  <text id="Программирование" class="cls-6" transform="translate(1181.386 907.483)">Программирование</text>
+					  <text id="Ваш_ребёнок_переходит_к_освоению_программирования_пока_в_графи" data-name="Ваш ребёнок переходит к освоению программирования, пока в графи" class="cls-7" transform="translate(1181.553 934.179)">Ваш ребёнок переходит к освоению 
+							<tspan x="0" dy="21.6">программирования, пока в </tspan>
+							<tspan x="0" dy="21.6">графической среде. Дети учатся </tspan>
+							<tspan x="0" dy="21.6">наделять интеллектом своих роботов.</tspan>						  
+						  <tspan x="0" dy="43.2">Собирая и конструируя, Ваш ребенок 							   
+							     </tspan>
+							  <tspan x="0" dy="21.6">изучает основы механики,</tspan>
+							  <tspan x="0" dy="21.6">кинематики, мехатроники. </tspan>
+							</text>
+					  <path id="Прямоугольник_7-3" data-name="Прямоугольник 7" class="cls-4" d="M1001.64,903.062l14.39,12.383L1003,930.594l-14.391-12.383Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия-3" data-name="Прямоугольник 7 копия" class="cls-4" d="M1031.46,882.786l8.41,16.984-17.67,9.476-8.4-16.984Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_2-3" data-name="Прямоугольник 7 копия 2" class="cls-4" d="M1063.17,874l3.43,18.918-19.54,4.579-3.43-18.917Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_3-3" data-name="Прямоугольник 7 копия 3" class="cls-4" d="M982.639,926.084l17.591,8.69-7.818,18.516L974.819,944.6Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_4-3" data-name="Прямоугольник 7 копия 4" class="cls-4" d="M974.529,955.6l19.225,2.682-1.516,20.037-19.225-2.682Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_5-2" data-name="Прямоугольник 7 копия 5" class="cls-4" d="M1101.29,879.533l-5.84,18.757-19.76-4.81,5.84-18.756Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_6-2" data-name="Прямоугольник 7 копия 6" class="cls-4" d="M1132.65,897.771l-12.1,15.933-17.2-11.459,12.1-15.932Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_7-2" data-name="Прямоугольник 7 копия 7" class="cls-4" d="M1153.99,923.766l-16.15,11.353-12.82-15.9,16.15-11.354Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_8-2" data-name="Прямоугольник 7 копия 8" class="cls-4" d="M1163.74,956.342l-19,5.2-6.83-19.136,19-5.2Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_9" data-name="Прямоугольник 7 копия 9" class="cls-4" d="M1160.95,990.358l-19.17-4.888,3.27-19.834,19.17,4.889Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_10" data-name="Прямоугольник 7 копия 10" class="cls-4" d="M1148.47,1022.55l-17-9.43,8.06-18.648,16.99,9.438Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_11" data-name="Прямоугольник 7 копия 11" class="cls-4" d="M1119.66,1050.57l-11.43-15.66,15.1-13.49,11.44,15.66Z" transform="translate(0 -15)"/>
+					  <path id="Прямоугольник_7_копия_12" data-name="Прямоугольник 7 копия 12" class="cls-4" d="M1086.88,1064.24l-5.51-18.65,19.07-7.27,5.51,18.66Z" transform="translate(0 -15)"/>
+					  <ellipse id="Эллипс_3-3" data-name="Эллипс 3" class="cls-8" cx="1067.313" cy="954.971" rx="81.938" ry="81.94"/>
+					</g>
+					<path id="Фигура_5" data-name="Фигура 5" class="cls-4" d="M1009.23,1020l5.76,7.29L750.767,1240l-5.759-7.29Z" transform="translate(0 -15)"/>
+					<g id="_4" data-name="4">
+					  <text id="_4-2" data-name="4" class="cls-9" transform="translate(620.719 1326.138)">4</text>
+					  <text id="Ваш_ребенок_счастлив_видя_результат_своего_труда._" data-name="Ваш ребенок счастлив, видя результат своего труда.  " class="cls-6" transform="translate(793.386 1258.482)">Ваш ребенок счастлив,<tspan x="0" dy="30">видя результат своего труда.  </tspan></text>
+					  <text id="Он_приобретает_базовые_навыки_программирования_на_языке_Си_._На" data-name="Он приобретает базовые навыки программирования на языке Си+. На" class="cls-7" transform="translate(793.553 1315.313)">
+						  Он приобретает базовые навыки 
+						  <tspan x="0" dy="21.6">программирования на языке Си+.</tspan>
+						  <tspan x="0" dy="21.6">Наша школа закладывает прочный фундамент </tspan>
+						  <tspan x="0" dy="21.6">благополучия Вашего ребенка.</tspan>						  
+						</text>
+					  <image id="Done_" data-name="Done " x="552" y="1173" width="221" height="221" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN0AAADdCAYAAAA/xHcaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gMaCxcs1FLalgAAKU9JREFUeNrtnXmcXWV9/9+zZJbMZJlJJgshIRuZkIQkJMgqiyhlkYrVVmjRKkppiyLaqq2FVur286eArdifggqK7c+lCFYFJSggIEtIQgwkoQlZyZ4JmUkmsy/943NO780wc+dsz3PPvfO8X6/zmsxk7r3n3jmf832e71oy7cGbcOSVUd5RCUwHFgGLgXOAjcAdwH8n+HpTgFrgCHAM6Aa68v0hjCTK830CI5h6YD6w0DvmA9OAMcBYoA6oAU4kWdFdClwL9APrgJeBl4D1SIgOwzjR2aEUOBmYBzR6X6cDE4EGYBJQPcjjxgMzEj6XNwPne/8+AzgI7AcOADuATcAGZGV35fuDK0ac6MwwGZgNzAROQgKbjqyWL7YgTPQenxQzvPPyqfZ+li3sfUh8O5HotgPbgK3AFqDD5gdZjDjRxacM7ZPmAlORqGZ538/x/l0S8bnHkKylO8c7v1xM8Y4zve+PAa96xyYkyN1Zx4FEP80RgBNdfCqAtwIfRUvH2gSfuwQJoIr4FqYEiW5qyMfVAEu8w2cn2gNuAF5BlvAQsoyH0H7RMQROdPHpRfuy5YaefzyydptiPs84YCkSUVz8Jell3vfNwGbgC8DPcaLLSWm+T6AI6AJeM/j849A+LOoS1ec04ARD5zgeWIasfJ/Bz6IocKJLhoPIAWGCcWhvWBbjOaqR17Le4GewES07HcPgRHc8UT+PFrSvMYFv6eKIbjQKE4w1dI4ATxv8DIoKJzqxHLgV+AjR9rktyKVuYmk1GnlA4/ytTkKxwTjCHY7nULzPMQwj3ZGyCLgYuARZgm3ACuSRC0Oz99g+kr+RlaL4XjXQHuHxVSgIPj7h88pmF/rMug2+RtEwUkU3DzgbuAJ4O5lskBnAu4HbgM4Qz3cUic6U164OOUFej/DYenRDqY7w2CD0Ac9jbk9bdIw00U1HXryrgCt5o/u8FvgT4AHkGAhKF8rc6EHJy0lThZwpG1GIIgwNyNKZOC/QzelpFJ+LSzXy0rYZOtdUMFJEV4+Cu+8H3oEsx1DMQ0nBOwj3xz+ALNE0A+dfjVLKoljSRobPQonDUbSfa435POVo5dEA/AKFYYoy3lfsoqsETgc+iIQ0KcB7rgauAR4Dfh/itY6h3EQTohsNLEBLzMMD/s+/MPu8f/tHH8o+OTfAe47DRnSDisuFwE3o5ng58K/AbynCsqNiFt0ZyLK9DXnvKkM8dim6CDYT3Nq1I9GdhVLDkqQKeBeqs+vJ+nmX97q9qCzHP1pRXuQU7/2b8lIfBX7nfY3DTOCvvM+uDGW6nAz8ELjbey9FQzGKbinas70VOBVdsGEpQ3u73wGrAj6mDSUFd5K86EpQxUGu6oQ+JMJO5EVs9c5jUsLnks1h4Cni7cGqUajmMjIhjVK0zP8I+nt+B3iI8PvZVFJMoluEPJFvQ4m9o2M+35tQFsdLBPNkHkFFoR2oOsA2pegG499kgpYPxWEv8CLR45NlwPuA9zL436se7cFnIPH9kPg5qHmnGETXiJaCl6CYW1JZ/hVoY/8UsDrH741BZTyzkHU15ZpPGx3ohhTVa1mCbmo3ovrDXCxFy80FwL+j/XbBejgLWXQVyLJd5X1NsqTG52wk5IF3c7+4dBZawi5HDoAT8/2hWGQPcnREtXInA3+DhBSEGvS3XgLcC/yM8EkMqaDQRXcd8nSZYjRwAcpSeRXtj+ah5etbUGZ9lD1jMbAXhQqiiK4e9Wl5O+GdPPOBz6Ei228AKymw3i5lY68+K9/nEJVuFG9bitk9VB2ZJeSn0HLoAmTpCvmmFZe9ZC74XoI7OcrRHu4fiL4UL0PiuxCJdicFJLxCFh3ow16O9nWm8GNk5yDhVeASxUFL7EvQErwaibCN4QPalwO3EH8pXoIqMM5A3dQOYTYVLzEKXXStKINhCWatXTnh4nwjgXJ00c9DN76LkJexCdUXDsYytI97c4LnUYn2h2cBE5DwWvL94eSi0EUHSrRdSPANuSN5xqDl9hJkeRagoH12UWsD8HGUUJ50HmgJEtwStOzsRU6WVFq9YhBdC1rqnEn82JwjHtVIfGci6zML7b2bgT8H/pLcea9xqUKiW4BE3oyWnalqIVEsjoBfI2/iH+f7RCLQi24cfvpWG7ISnSgW1uX9jl+r1k+mX0oZ2mOWowuuEl34o8l0ih6L/b9zGSonOh8tJVcCf8Tw8bikWISqMl5BXctSRbGIbhPwCEolSqLblQn6UNqUnx95FO1/9iAnxH7v+2YyAjyCROind8HxohuFRFaJRJbdkn0SusgnocTnBu//xqC9WB1mK8l9LvIO26xEydg9cZ8oaYpFdADPIot3Zb5PxKMTCasVCekVNDdgM2rtsJVoRamQ2at0khHjcK0SxqPE4tnI+bEILQEbUGJBLcWTTfMK8H9IoZWD4hLdRuAnqIQnX55GXwTbUOrYKu/rdmSxutGdNx+Ju83AWpQfWo6sZBXyOJ6Gck3PQnsy33rGbfuXD/ahBOnfkNIE6WISXR9aUjyJciBtxtKOAWvQH/oZZMX8JWKUviYm8asRurzzPoQ6Nf+MjBfyLPQZno7Z3ipJ0+29j7tJ4bLSp5hEB7Iw30cXjelM/y7UG2QFsiB+j/+oS8Z84lvoJvQZvogu3hNRbO1C4DzS7x1eAXyVlGenpEF0F6EL+Bniu3a7kLXZhgo+TbARVR6sRBaiGOe6tXjHBlRT+CiKhZ6OUuBMfbZxWAPcSQEkQedbdG8C/h7tL76D9mRxlmOTUCZ60k1Vu1Fy73Po5rASeR1HAsfQvnQ18DBaRZzhfbWxogjCHuAu4PF8n0gQ8im6ecDfoaXLKOTeHgv8GC1zwjIfVR18kOQCsM2oT8qz6IJ7mpRmOViiCTUN+gWyepeiZedSzFao56Ib1dj9nALpp5Iv0Z2AUoIuJ5MSdApKhJ0IfJvglqQCZUDciFosJMFh5Np/BPgB4drxjRRWecdM4D2owrsROxXr2TwCfBfFOguCfKSBjUMW6SO8MZA9BiXP1qML/fAwzzUaZTrciopN49KOPI/3AJ8BfoobejgczWgl8Bvv3xPQiiXpPjGDsQFtT9bk+0MIg23RVaL2dv/I0K7oShS4nY0G3A/VObgG+DBaoi6MeV793ut8D/gn5Lnbz8heSoahHwnuRSS+Y8gCjsFcrG8futn+ingOuFIycV0rOZq2Rfce4LMMPw20nExPjN3I+mQzEbgZuIH4dVntyIFzK9pPbsX15I9KD9r3rUVez160d086WeEwatnwLeI53iqRD+A6lOe6xcaHZHNPdymqvA46Q7scOVnGAF8G7kd3olnAp0nGS/kCsm4r0B7OkQyHUZLCduTtvRYlPydBFwph/BvxQjWNqNfmu5ARGI8GoRhPHbNl6c5Fy7YoL3YCsnhdSIAfRWUicQK1rwP3oS7CDxDNW+oYnhZk9TYjgUwn/o3yCPAj4JcRHz8KeCfwCeBP0R60DK2YStCN2GgWkQ3RnYIEdwnR1/eT0D5vOfKSxbHQq4D/hwKpL5GyWqsi5TV0MR9EW4M4sxX8NLadyDKFYQ7wIdS+/XyOv44qUQpcK7pGjF0XpkU3Be293kl8b1ad96FEFW4rirV9GcV14g68cISjHQXYX0UJ1VOJtlqpQDHZmWgPFmTeeyVaZd2EQktDzV4fg/agOzCY2WJSdHXAx9A8AZNjd4NwEMVybqXA3MtFyA4yTpbZKIQUlhK0t5+NxJFr1sEk5MD7DKq3HG6VVIeceOsIb0kDYUp0NcAHUBOaCSZeICD9aD/xZeAO3N4tLbSi5eZO1GFtEuFXMCXI2k1HRcwDg+NlaGvzaWThZod47inesZpk5u4df2IGRFeK9l2f9U48nzyBrNsDpK/EZqTTjcTyIhovNodowpuFRLuZjPCqUNLEF5HXPGx+qC9oUOFx3KlEx2FCdH/gvdm5ST9xSH7oncdvcXG3tNKHlnAvoi1II+GdZKVIsDVIIDUoYeJjqOV9VKeb39C2CYUREsvrTFp05wCfR8mw+aIdBU1vQ39Ml1WSfg6SiY/NI7yDpQwJrxFNbbqaZJogVXnns5ME43dJim458lQmkQMZlWbgm8DtWMoucCTG68hS9aALPeySsBKJbgHJZsDUoYSOV1GwPzZJia4CBa0/mOCbDUsTqqm6naHzNR3p5iiyKN1oaZdvr7fPNBRfXEsCzrikRFeJzPt8zDYTHYomlBZ0Bwa8TQ6rtCGL14kSItIivJNQx7RniTkbLynRdaMo/l4U45iMvU5SR4F/QYJLdQ97R2A6yQhvMemoTi8nk0nzAjGcc0nu6fpRoHIzWgPPwLzw2pDg7kT7OUfx0IXq5UAWz8TQz7DUoBDFLlR2FilVLGnvZT9qCrQOZW03Yq6LcBeybncy9JQYR2HTidplVCAHSRq6d49Hjp51HD8gJTCmMlL2ouUBqMA06XqqPlRP9VVGToOgkUonsnh16FqyUZE+HJNRVcJqItzwTeZeHkLCa0MWL6l1eS9qjPMF5MZ1FD/H0LZlIgp4p2Eo5xyUN7qBkM470ye/C/ga8CW0Bk6C57zn2xD3iRwFxRa0nXg43yfiEbmDtI16uk6U2d+E7g5x8jE3oYyXR02ftCOVHEAVBUsYvuWHSbajTuJ3EqFTXBjR1aJ1dR/hVd6HCka3Iu9P0JYN2TShSu97EvjQHIXLLrScOwf7MbxOFBq7A3nNI/kTwojuMlR1OxndcToJPxVlL1qXvzXk47pQPuXtFEhDUYcx+pG160P9Tm1NaGpGfXpuQT11IsfpwmRgvwWlebWjHiU/QCUz+wker3gTqiIPy38h0SVaYuEoWFpQ9f8SNH036Rnm2fQj/8E30DUfe0BMUNEtRdNbKr3jXFS68x7UzvrHDB+zmIwEtzzkOa5DTYRSPxjCYZXdaOXTiK5NE/SiJkh3oyyUWOlfPkFF93bkqs1msnc0osqCx1FH5KHEcRFqex7GY9qK9nBPJPFmHUXHauTM+Bzx+58OZCtq738/CbdnDCK6Cahz0vgh/n8yKlw9A1nAp9AY4uxeJLOQlQv7wdyPrKhrIuQYivtR06H3kcz8vF7U3u8+4CESsm7ZDCe6UtTwtTHAc40HrkBW73y02XwGpfH8IeGbjW5Cd5qCGQzhyAut6DpZgCYIxWEn8lPchwqgjTCc6GpQr4kwVbiVaDl6GbJ4D6HNbpj4XCtynKwz9cYdRcUq5OQ4hWhTg9pRSOteFH87ZvJkc4muBJXpnI3K1sNSipadFxOu2qAPWcj/j/NWOoLzU+TNvJ5w11sHSiu8HY2zNk4up8YY1NUr7rC/sOU9O1EFuFtWOsKwF01bCuvl3g/8B5YEB7lFNxktLW2WU3QjL+ivcA2FHOF5DMXvwjAFlepYG6YzlOiqUJrNXOxVgIOqEu7FgMfIMSLoQJNZnw7xmErgSrSNssJQopuKlpbVtk4EOU9+g6oIHI6obEDexzBpWstQHNmKgRlKdAuAC2ydhMeLwH/iGsM64tGOkinCTN6pRpbulIivWYdCYmcTQDPlQzzBedidQdCGwgsvWHxNR/GyGw2MWUjwSoSlaJxbkDrNcagt3zRUMdOIAvT70ODT7bkePJjolqL+7zZZhUTnnCeOJGhDWSUfQJUIQVIPJyM/xl280adQi4yQ33h2McohPg215vPZi5ap3yNHBU75IN8vQ/EOW/ShotSVFl/TUfwcRLPk5xF81XYKKjt7FKWU1aDC69NQhcxylNJYxuBCbkBt3XOmLg4U3SK0l7PJRhQjiVz+7nAMQgcKmF9FcNHNBN6LcoSXIis5DXnzqxg+rFCOhDmNHO1JBj7J2SQ3kD0oP8cNanSYYRuK+84j2PDJGpQ/fCFKDonivW9AhmsnQ4xnyzaRk5Gyo0zGjEqT96G4VugOE/ShAugww2RGoyysqOGysSjveEgdZYvuPCQ6mx/I06iawOEwxRqUzGyLMlTmNn2oXyjN+noxGgBii26UK7ff4ms6Rh4dKIHeZlPiBiS8Qev7si3dejSR5LClE9uBHChuLLHDNI+jsJQtylDMb9pg/+mLrg81hf0Q8HUUpI7dgCUHnd4H4aycwwabUW1m2O51USlFTsmZQ/1nNhtRv4mrgK+g1CwTNW3NKM/yiKUPweFYR0KTVAMyEcW837DEHCzA141crXeiRkI3o8B1kjmRe1Fis8uzdNhiHWpkZJMLUCH4ceRKjzmGXK33oH6XH0WJpHFNdAdaX8ceI+twhGAr9uPB5zKIczJI4d4x5GTZhPZ6Z6AeKBcTbWzRIeRNcp2aHTbpRtfwPuLN0wjDWJSn+TBZ27QwbdX70LJwFUpx2eS9kbCBxK3IaXPA0ht3OHxqUP/WORZfsxMtbXf7P4g6Kms1GqBwM4q1hXG27CBchoDDkRTbsb+vO40BXc3jzqd7yXsTQVuWtaKlaqflN+5wgLY264g4KzwiE5B1/V8vZlzRVaBs7PqAv78bic7hyBc7sB8fPpWseQtxRVeFapCCOlT24iaoOvLLYdQAy2bB9ALkyQTii24Kwa0cyHPkpu848snrSHQ26zfrURFsLUh0JcgDOR9lRgcVYikwm+Ceyz5UY9Rh8c06HAM5jLY4thMzTsFrHVGOkjPPBq5GLtVm78QOIrf+Qe9o8r76tW99qD9EUNEdBl6z/EYdjoF0oVxMm5auA1U51AIlvugaUcVsbdYvdiKBNXlfX/e+HkLi60b9IGoDvvAe7JZXOBxDcQAZF1Mzy9tQKuUWFKbYhvKaNwL95Wh5WYVEli2gSuAE7xgMvyQn6HCRfWQFCB2OPHIMiWE6yfR29S2Zf7yC9o3rGKRXii+6MYQfmB62nH0fsCu5z83hiEwHskJnES2VsRNtl15H1/UGlKm1BlmznEvXcuQQGUd40YWlCZf65UgHXcgAdBJMdP1oyXgUhb3WoDzklWh/2I58HIHCEL7oxgKjDL/Rw7hSHkc66EIWqhOt8oajA/XQvAvlDrd7R6SkfV90QV44Dr1o4+pwpIEutPcKKppelPL4TBIv7sfpTHlxfFq8w+FIA73I0gVdeVWR4EqwFDlETI/Eeh03ytiRLvywVxDKSbAfrO9EMT2F8iiu65cjXbQQrtolMcPk7+dMi+4YTnSOdNFNuIm/QePRw+JbOtOey6Mh36DDYZp+wm15ahmieWxYbImuA1e46kgXfuwtKDNRd68JaHUYJagOaFlpI0bXhYvROdJHmM52y4Fvo1TGl1BP2DUoG6WFEPV5vlfG9J6uB7sl8g7HcPSjFVg/wfIvs3ORlwCXkykC2Ar8HuVavswwlem+pTMtul7stbR2OILQT8YYlIV8bAUq4PZb+Z2H0sP2eF93ovSwDSj5eWf2g20tL/tx88Qdxc1U7/A5iCzgVlTR4C9L15YD4zFv6UqI3xrC4SgkGrzDn/nYCTwEfMJPdjYtujKSqVtyOJKiBK3wbBmDSmAG0GkrI8WvUHc40kIJEoJNY7AHaC1Fy0vTgqjA/L7R4QiLTUPQjnpu9vqiM81ozBfJOhxhKEWNuGxxBHkxe0tRBa3pkceJpdA4HAkStKlWErQg0fWUA58HJnsnMCHr8L0vE72vcUobajBfPuRwhKECu5auBbWg7C1Hs7+zqUaim+gdE7K+r0fia0Djhk4m2Lp4DM7SOdKFjb5A2RxBe7r+wbyW7WjJOVTnrlrgRODdwKcJdreox3xLCIcjDA2Y99pncxivMVeUGEUrSm0JM011HAlW3jocMSlD2SORKwVC0ofyMXsgXmDwIMFbU9vykjocQajAruiOkNXdPI7ojhKu2VAdLmzgSAe2RddE1nYtjuj83oFBaUDTgRyOfFOJWqrbEt1BEpg5DipK3UPwJeYUYJqlN+lw5KISjXmzJbpDJLS87CbTmjoIU5DX0+HINzWo/YKtvMtDZI2Ji7u83EHwLl+5JgA5HDaZgl1vehPy+gPxRef3dQ9CHVpHOxz5pJLgSR1J0IP2dP9LHNH1onL0IyEeMwO7qTcOx0DqgIXYq3o5wICeKXEL+JoJJ7opaLa5w5Ev6oBTCZ6N0oqySVqJ1tFuLwNEFzUNphyYC7yVcGGAqWjg+erIH5nDEY96YBHBnSg/BR5AHRbOBJahazjo0J1YoqsElqLOR8uR6Kai+FtQTvTesMORL2YR7pp9EXgQLUcfJVMIMA9dy4uQ5awf4vH7CCm6OuA04E3AAhTbOBmVAkWhGq2nq3GzDRz2aUA9K4NauS4yrn4/Lu3H255A3vhp3jEDaaPRO/zwWBMDHCmDiW46EsZ8JLSFwGKSK/ib7p3cOkMfrMMxFDPRKi0o28nKJBlAH2+sxpmMDNNsVPo2C/gdAwoDfNFNQutUX2Bnel9NdEpqQAPW1+Ma0DrsMgNd40HoR23TD4R4/v3e8az3fT2DOF/KkamdCdwKXGjhjdcDZwPfxy0xHfaoQPuwoI6/PuAFhmmRPgyvD/bDUqToPdizOlXIxLvkZ4dN5gKnh/j9NmAtBiYI+8vHPd4L2JqsMxk4F9eWz2GPxcjdH5TNDL2fi4Uvuj7gSVQRboPxwNtw1eQOeyxGe7ogdKB92esBfz8U2Y6SJ5G1s0EFcD7HD1xwOExxCuEcg22oYZeR1pTZJ9GM3PiJr2GH4ETkUHFdwhymuYhw+7mtwEqC14qGYqDyVyFXvg1GAVeSmfHlcJigBoWowiR0tGBwXPdA0b1MJsZgmlLgHFwCtMMsZ6A0rTDMAW7wHluV9AmVjb36rOzv25Ar/1LseBarUBxkLXDMwus5RhZlwI0oMT9MU6zxKGa9FMWxW9C2K5Gw2kDRgcTWiFJZbDARie5VS6/nGDmcDPwtSv6IwjTkZV+Olpt7va+xpgoP5s35b5TMaYu5aJmZuBl3jGiqgXeh/Mc4VKLKmq8C9wLvJKbzbzDRtSKHyiFLH04JcDGZMbEORxJMQa3/k4oFTwDeDnwF+CaygJEaGw22vMR7soXICtnomDQR1R09hQL1DkccaoCrvCPpBsd1qDzoVOQEPIZGYAVmKNF1eCd+KXZmMpejveR6slqVORwRmQP8M8pAMWU0piLv5lxkVTtQBsuwsb2hBNWGgoN7LX5QS4A/xl4DUEdxMhot/U7DvMEoBS5AFTp/ScAWk7lOahcqwDMSlR8E/8M6z9LrOYqTU4H3YXeeuN+mPRC5RNcM/JJwQ0LishD4EG6WnSMatcDlaNlnkzbkj9gW5Jdzia7Te6KwS8x+tL49gGbY7SZ4XKMUlfxcgd07laM4uAj40zy87jPACgJe58OtefejJWZbwBc/hKzjZ1Be5TXA1wgn3BOB63HDRhzhmIFiaCfn4bWfJUSFznDdwNqBR1AcbagMlR3A80ic65Fl20OmCe13UUpN0DkGpWh58OdIsGGa2TpGLu9CN3rbrEfXf+AC8OFE14+WmK9xvOg2oIax61Dh6xaUxjXYCx8AHkb1TEGt12jgg8DT2M2OcRQm56CYXH3cJ4rACuC5MA8I0my2CRX0lSErth5VI/we1R0F4Wco4+S9Ic5tFnLDbiVk8NExohgPXIeSk23ThFZ4obK3goiuBPgx8BiyZlFidztRe+pzCZcL90eow+43cctMx+BcDVxCfnJ3HyNC/9YgwcN+YCPRPJnZPAH8J+HSvCqBa9Ge0tYAP0fhcDaqe8vH3MMu5DTcHvaBNlK8fA4BPyf88JD5yKmy2OK5OtLPDOCTqAt5Pvg96osZuoOeTdGBNpzfIXwp/GUojJCPjbIjfdSjFdAfkJ94bjsaKhIpT9i26HpQCOJBwqWXjUIxv7/CLTNHOhWoxOYG8jdg9CBaWkZq4mVbdKA18J2olCcM45CXKh8ZB470cD5aVobtEL4ThbpiVX0jK/cYSvmK9FxRh0LGoQZ12q2O8NhZwMeRQ+fxPJy7I78sQ4IL22ioEznxHkOtF/4QjX+LwiHgB6jYOxK2RTcFrcVvQJW4UVgO/L335t24rZFDI/AptI8LyyPIl7DR+/cLKL/3LYRzxPSRyUCJ3KRoqCJWE8wAbvKOOMNDSpDFGw28hKEuvI5UcQLwDyjrJKyheBUVtPpZI/3ez36DtjilaPU1PsBzHUTi/R0xlqm2RDcP+DRyhCTR0bkELTH60Z3HBc6Llzrg71A2U9jBpEeBL6JQVdeA/+tF184KlNg/Bs0Rz3V9rgJuI+aMA9OiK0Hr8M8T7S6Vi1IyUzVfIsYa25Fa6lALvesIHy7qBO4D7iJ3mlYHun4eRZZskve6A/u+tgH3e0csTIquFNU3fQFVhJvYP5aRmSG9FjdkspgYjxrFfhg1rgrLb1GJWZDC0n5kFdchZ8sh4CSOF/oaJODtcd+YKdGNAv4E+CeUAW4yNFGBKs6r0R3LdYoufCYiZ9uNaFx2WDYgZ9uqkI/rQUnM61BhahMS31iUtH8vCbQvMWF9xqC0rQ+jEUU2qAf+Aon9NlTP5yhMpqK9//VEc7jtQL0pn4hxDs2orGwT8lQuRyJMZCWVtOimoB4nf4HuEDapIyO8f0E1fo7C4iRk4a4lmoXbC3wd+FFC53MAeACFGRJLN0tSdEtQ4en7kADyQS26S9airJc1eToPR3hOAT4K/BlazoWlBTlO7iX5vX2iW5YkRXc+ukPlu5NXOfABtOS8A7ttBB3RWArcjOono1iUo6jm8x7sjQOITJKOlD4UxJxLOjp5NaKyoMNonR+6BMNhnEp0s/4iSmKO4nDrB34CfBkNv0k9SYpuP9p4TkRLhTRUA5xIZjDJBhSTcaSDsSh2+wU0mjjq9dKHOgs8ku83FJQkRdePNrJbUF7lwny/OY/xyPt0ArCZAlh+jABmAn+DktdnEe8GXYIEvIkCmYNhIk63F13cE0iPxasGFqHk1k7UwSxuiYcjGpcC/4jGWEUJeg+kBOX1lqO0rlgpWjYwFRzfh5JKJ6G8y3zU7Q2kHE1zWYCcLDuw2zJ+pDMVpXN9DGX3J9lIyBfeUVRBkGrHmck0MF94k0mPcwV0IzgDXQSdaEmS6j9SgeOnA96AWirONfQ61WiIxy60f08tphOe96K+lVNQs9okhNeJmsJUEr1ioQLFFZd4z9OMkl0dyTIHOUs+CbyDZCpMcjEB3eRXo8B2KrFR2rMHJZ1ORn+EOMJrQxXAX0Qf6hzijbedhO7CM73nPoKrVkiCBtQe72PIYTLD4mtPQbHip0hpAryterrdyKs5CQ14iCK8VuB7KHN8PcqFa0PCi7MhL0X7zktQ2/cmZPm6YjznSKUG1TneCNyChDcq1jOGpxx5qptR4nLqtg42K8f3IOFNJHw4oQmldX2JzLKhD7V334bW8tOJ7iktQXuChagMaQrakzbhvJxBKEOJCH+NKrzfhpxV+fJc16C941oSKMVJGpuig0wcr4HgFQhbgf8LfIs3uoN7vOdbh/ZmpxLPU1qG8kYXoUlDc1Fcz+YY6EJjIaoo+STqTzoD+9ZtMCYgZ9lKUhabtS06yAhvEkrVynU3XI2s248Y2r3fh6yoXz3eSPiy/oFUImu3GAXWF3k/30WMhjRFRBly+1+PEszfgZb5+ZgnkIuZyPG2jhTVWeZDdHC88E5mcOv0OLJwDxAsfeswWk7sQ9YqidKiCrRsPQvt+xaiDJd2RmZDpBNRcPv93vFu5JVOm9h8StHN4ABK2AjbWdwI+RIdZPZ4A72aPcAvkIfyUcLtqTpQOc9W73ENRCsTGYxpKL53une+U9He4RjBJ9UWIhOA09DS8RpUL3kFuhmlJfaai1oUNH+alCRD5KPZbDar0PKxBP0hu5Bl+xJykkTlt+jONgXdnZPkJO+4Bgn8UbQM3oJuJGE7V6eRBuQBnIESxi9AnshCENlAtiDBpSYUlG/Rgcrhv4RMfwvqHJbEEMjZyIqaZJl3dKEsiMdR/d5G5LIulLjfaLQiGIuW++ei+OVionXiDsJRtB+PE2cdjvXAZ9FsxNSEgEqmPXhTvs/Bx4+1NSXwXDNQucfF2L2xdHnHQbR5fxblAm5GIuxGy+d8xo7Ks44atFddhvaty9HqoAI5k0zQjSoCfoq2AB8hWKPXMPSjVdQtqKlsqpxfabB0PkmIDeRE+Tjyrtl+fxXeUYuEfwG6ox9By5wNSIBbvWMvdopry5CY5qAVgJ/4PRvF02pRFodpV/8hVHD6Xe+zGINCR1eS7N/qcSS45wk3hNQKaRJdEoxGJf/XkH+PWhm6g4/3vl+IYn8tZITYgop/D3hfD6IL8why0Phfu8hYxy7vuf2jyjv8DsVj0I2nAXmHp3pfx2f9/1iSty656EZdlv8DCWG39/MWVPE9C1nbuPQA/4UKY1+0+P5CUWyiOx1ZuSidpGzg75sG0oaEeBSJrB3tcTu8r71klki9yPFU6h2jvKMq6xhNRlz5muEGEsEK4CHgSQZ3jq1E2UafI57Tqw1N0/kq2sullmIS3Vw0nGRR3CfKA6O9w7TjxxatKDf2ceDXDN/09X6UTXQd0UI8TcD3gW+g5XuqKRbRTUQ9L6/M94k42I4qQX5I8BaIrah13mzgnSFfbxfwbeBuCiRdrxhEV4FauL+XwowjFRtrkQg2hXzcy97j5hJ8tbIN+Fck2IKZ3JSGNgpxuQA1uD0h3yfiAJT7GnZSqs9DaIkYREAb0ayMuwP+fmoodNHNQgm3Z8Z9opD04kp+hmIeah4blZ+gipJcn+8qVNXwI1JaqJqLQhZdLapMjtqkNAq9KNj9NRTcTUUuX8ooQ9YuaqbJfuDfUVB7MH4NfAL4FQXaQLiQ93SNKOPEVObEYLyGYkAr0UXlB5mXobv7/Hx/KClhBlpiPh3x8S+jITDzOL7Vw4MoET7sCKxUkc8qg7iMQkWtY1DdlGkOoxjQ99Aeogm5p19AKV8vIDf5q9559SD3dyHf2KIyCjk5nov4+D6Uf1sGvBl9hvchwa3N95uLSyFfEDtRfuUG1HHqCsw1wGlHy8l7eGMeXzdqXvuK972fNDzbO6aj0phz8v2BeTSjG8Y4zCURTETWv4Toe99OdIM7CX3GX6cAYnBBKGTR+TyJLM06lP51Oslnxj+LvGpByv6PoFKf1Vk/ux7zovMzWLpRqlgHytLw6/1aUdnRTrRMPg/VxpmgDLn+p6E4WlQOoAqUJoqoZrEYRAe6e9+FympuIFNkmQSbUfzohRjPYTLptgulPa1CN4VWlE52GDkl9pFpspR9Hi0omSCJ1uaD4Tf13RPj/fvLzKKiWETn8zLwKZR+dBMqVYmT+HwMLSl/HOM5RmM2ubgZJRJ/C1m3fu/oI/fFvh1Z40sMnVcDsu4P46YlHUchhwyGohV5ua4FbieT0R6F+1AZSpx6rErMDsrsQsuwI96//Zq94azLa5j1AtYiS2eqCLZgKUbRgS66zcjb+Neo3CPsEmcFSi+K236hkvjdyXLRjSxy2L/lYVT+YqrA0x/qYWp2QcFSrKLzOYTquG5B45k2BnzcDuQ4WZvAOVRhVnRdaH8W1kvY573PLQbPbSzO2r2BYhedz8vI6t2MUody9UBsB/4NZT4kkfFQRXIdyQajGzlOorjmD6CiUlPWrg5lDNUbfP8Fx0gRHUhMDyLhfQVN/hlILypLuZfkGgqZFl0PEl0UmlA4xITo+tEM8FdJUVOgNFBs3ssgbAH+GaVyfQjFqyZ5//cscBvJ9WsB88vLbqLngLahJfQRkgsd7EaxuXUof/JJ3Biy4xiJovP5JXKZvx/F9lpQInPSpf6mHSn+ni4qe9Be981EH/hxBO2f1wKPoKW53/DXMYCRLDrQnuZrKEewHsWUkg5k+02DTNFBvPKWZpQzuoxw/VS6vdddjzL+H0Ye4zYKNPvfFiNddKD0qadQkq6Ji8X0nq6VeBblKBLd+wkmOn+v9jBKQliPErxdmVNAnOgymLo7m7Z0cR0+fShedwD1xhyKXcBjwBMoyXwHxdFC3jpOdOapxFwPzh6SaVXQhBwfjRxfn9iMrODzaL+2AXkjHTFwojPPaMyFZjpIRnQ9aF/7DlQhsBLFNteiRO81pLBTcqHiRGceU1n8oH1oJ/G9hD2oQuO7ZEaVPU8RldOkCSc68+xj6BbfpQRrG9jP8V2d8b7fj1zzcelHDpFPkZLBicWME5157kdB4oHWqJ9MG/QglqoE7bcqyAiwHVULJIFz81vifwC+D+eSFdGPYAAAAABJRU5ErkJggg=="/>
+					</g>
+				  </svg>
+				  
+			</div>
+		</section>
+
+		<section class="section-form">
+			<div class="container">
+				<h2 class="section-form-title">Приведите двоих детей и получите бесплатный пробный урок</h2>
+				<form>
+               <input type="hidden" name="info" value="Приведите двоих детей и получите бесплатный пробный урок">
+               <input class="input" type="text" name="Имя" placeholder="Введите имя">
+               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
+                  <!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
+					<img src="./img/mini-robot.png" class="section-form-img hidden-xs" alt="">
+				</form>
+			</div>
+		</section>
+
+		<section class="section section-polza">
+			<div class="container">
+				<h2 class="section-title">Польза робототехники</h2>
+				<div class="reviews">
+					<div class="review">
+						<img src="./img/review-1.jpg" alt="">
+						<div class="review-text">Робототехника объединяет программирование, логику, механику, математику и физику. На занятиях ребенок сможет получить базовые знания в этих сферах, плюс закрепит школьную программу. И это будут именно практические навыки.  </div>
+					</div>
+					<div class="review">
+						<img src="./img/review-2.jpg" alt="">
+						<div class="review-text">Тренировка пальцев рук влияет на созревание речевой функции.  Ребенок с высоким уровнем развития мелкой моторики умеет логически рассуждать, у него развиты память, внимание, связная речь.  </div>
+					</div>
+					<div class="review">
+						<img src="./img/review-3.jpg" alt="">
+						<div class="review-text">У ребенка должен быть широкий кругозор, в чем и поможет робототехника. Он забудет о социальных сетях, компьютерных играх и бесполезных фильмах.  </div>
+					</div>
+					<div class="review">
+						<img src="./img/review-4.jpg" alt="">
+						<div class="review-text">Мы воспитываем детей всесторонне развитыми личностями. Определяем и развиваем сильные стороны ребенка. Мальчики и девочки, гуманитарии и "технари" — мы найдём подход к каждому ученику.</div>
+					</div>
+				</div>
+			</div>
+		</section>		
+
+		<section class="section section-reason">
+			<div class="container">
+				<h2 class="section-title">Почему выбирают "РобоТрек"?</h2>
+				<div class="reasons">
+					<div class="reason">
+						<img src="./img/reason-1.png" alt="">
+						<div class="reason-text">Сеть клубов "РобоТрек" представлена в более чем 45 городах России и Казахстана.</div>
+					</div>
+					<div class="reason">
+						<img src="./img/reason-2.png" alt="">
+						<div class="reason-text">Только лучшие преподаватели, каждый имеет опыт более 5 лет.</div>
+					</div>
+					<div class="reason">
+						<img src="./img/reason-3.png" alt="">
+						<div class="reason-text">Уроки в клубах «РобоТрек» длятся 100 минут в плановом режиме и 120 минут в интенсиве. Дети не устают, потому что занятия всегда интересны и разнообразны.  </div>
+					</div>
+					<div class="reason">
+						<img src="./img/reason-4.png" alt="">
+						<div class="reason-text">Все занятия проходят в уютной дружеской атмосфере. В группе до 8 человек. К каждому ребенку свой подход. Работа в парах способствует формированию командного духа.  </div>
+					</div>
+					<div class="reason">
+						<img src="./img/reason-5.png" alt="">
+						<div class="reason-text">"РобоТрек" использует только передовые технологии и программы единой международной сети «MY-ROBOT», основанные на инновационных южнокорейских конструкторах HUNA-MRT.  </div>
+					</div>
+					<div class="reason">
+						<img src="./img/reason-6.png" alt="">
+						<div class="reason-text">Вам не надо приобретать никаких учебных материалов! Мы сами обеспечим Вашего ребенка всем необходимым.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-form">
+			<div class="container">
+				<h2 class="section-form-title">Оставьте заявку на бесплатную консультацию со специалистом</h2>
+				<form>
+               <input type="hidden" name="info" value="Оставьте заявку на бесплатную консультацию со специалистом">
+					<input class="input" type="text" name="Имя" placeholder="Введите имя">
+					<input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон*" required>
+					<!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
+					<img src="./img/mini-robot.png" class="section-form-img hidden-xs" alt="">
+				</form>
+			</div>
+		</section>
+
+		<section class="section section-zaniyatie">
+			<div class="container">
+				<h2 class="section-title">Галерея наших занятий</h2>
+				<div class="owl-carousel section-zaniyatie-carousel">
+					<div class="zaniyatie"><img src="./img/zaniyatie-1.jpg" alt=""></div>
+					<div class="zaniyatie"><img src="./img/zaniyatie-2.jpg" alt=""></div>
+					<div class="zaniyatie"><img src="./img/zaniyatie-3.jpg" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-group" id="programs">
+			<div class="container">
+				<h2 class="section-title">Программы по группам</h2>
+				<div class="section-group-text">На занятиях дети узнают много интересного об информационных технологиях, о новых методах решения задач. Учатся разбивать крупные задачи на составные элементы и справляться с ними по отдельности. Выдвигают гипотезы, проверяют их и получают самые разные результаты. Привыкают работать в команде, слушать и слышать мнения других людей. Учатся мыслить не по шаблону и создавать нечто новое.</div>
+				<div class="groups">
+					<div class="group">
+						<h3 class="group-title">«Kicky Junior»</h3>
+						<div class="group-age">(младшая группа 6 - 8 лет)</div>
+						<div class="group-text">Занятия в игровой форме формируют первые навыки конструирования и развивают мелкую моторику рук за счет использования блоков конструктора. Работа с блоками позволяет с минимумом деталей собирать объёмные конструкции, формировать и развивать не только логику, но и пространственное мышление.      </div>
+						<button class="button group-button" data-remodal-target="zvonok-modal">Узнать цену</button>
+					</div>
+					<div class="group">
+						<h3 class="group-title">«Class»</h3>
+						<div class="group-age">(средняя группа 8 - 11 лет)</div>
+						<div class="group-text">Эта программа дает практические навыки конструирования и моделирования. Позволяет познать основы алгоритмики и программирования, а также сформировать научно-техническое мышление и расширить представление о проектной деятельности.</div>
+						<button class="button group-button" data-remodal-target="zvonok-modal">Узнать цену</button>
+					</div>
+					<div class="group">
+						<h3 class="group-title">«Stem»</h3>
+						<div class="group-age">(старшая группа 12 - 14 лет)</div>
+						<div class="group-text">Занятия позволяют понять базовое программирование и освоить работу серьезных конструкций и механизмов. Простое программное обеспечение и подробная инструкция помогают сконструировать и запрограммировать множество моделей роботов, представленных в наборе конструктора.</div>
+						<button class="button group-button" data-remodal-target="zvonok-modal">Узнать цену</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-schedule" id="schedule">
+			<div class="container">
+            <h2 class="section-title">Расписание занятий</h2>
+            <div class="section-schedule-content">
+               <table class="section-schedule-table" style="width:100%">
+                  <thead class="thead">
+                     <tr>
+                        <th>Время</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                        <th>Суббота</th>
+                        <th>Воскресенье</th>
+                     </tr>
+                  </thead>
+                  <tbody class="tbody">
+                     <tr>
+                        <td class="bold">9:20 - 11:00</td>
+                        <td>8 - 11 лет</td>
+                        <td class="active">8 - 11 лет <br>
+                        (идет набор)</td>
+                        <td>-</td>
+                        <td>8 - 11 лет</td>
+                        <td class="active">8 - 11 лет <br>
+                        (идет набор)</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">10:00 - 11:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>6 - 8 лет</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">11:00 - 12:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>8 - 11 лет</td>
+                        <td>-</td>
+                        <td>8 - 11 лет</td>
+                        <td>-</td>
+                        <td>6 - 11 лет</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">13:00 - 14:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>8 - 11 лет</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">15:00 - 16:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active">8 - 11 лет <br>
+                        (идет набор)</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">15:20 - 17:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>6 - 11 лет</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">16:20 - 18:00</td>
+                        <td>-</td>
+                        <td>8 - 11 лет</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">17:00 - 18:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td class="active">8 - 11 лет <br>
+                        (идет набор)</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td class="bold">18:40 - 20:20</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>6 - 11 лет</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                  </tbody>
+                  
+               </table>
+            </div>
+			</div>
+		</section>
+
+		<section class="section-form has-age">
+			<div class="container">
+				<h2 class="section-form-title">Запишите ребенка на бесплатное пробное занятие прямо сейчас!</h2>
+				<form>
+               <input type="hidden" name="info" value="Запишите ребенка на бесплатное пробное занятие прямо сейчас!">
+					<input class="input" type="text" name="Имя ребенка" placeholder="Имя ребенка">
+					<input class="input age" type="text" name="Возраст" placeholder="Возраст*" required>
+					<input class="input phone" type="tel" name="Телефон" placeholder="Ваш номер телефона*" required>
+					<!-- <span class="error-message">Заполните это поле</span> -->
+					<input type="button" class="button ajax-submit" value="Оставить заявку">
+					<img src="./img/mini-robot.png" class="section-form-img visible-lg" alt="">
+				</form>
+			</div>
+		</section>
+
+		<section class="section-contact" id="contacts">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A16b31feba4350593fab16d15d2b64ae9ea0e43452f5e879d1ddedaf240aad586&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+					<div class="section-contact-content">
+						<h2 class="section-title">Наши контакты</h2>
+							<div class="section-contact-title">Телефон: <br> <span>+7 (701) 717-88-13</span></div>
+							<div class="section-contact-title">Адрес: <br> <span>г.Актобе ул. Братьев Жубановых 276 Б каб 409 :</span></div>
+							<div class="section-contact-title">E-mail: <br> <span>sabanrola@gmail.com</span></div>
+					</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<a href="" class="dogovor">Скачать <br>“Договор оферты”</a>
+					<h3 class="footer-content-text">
+						Клуб робототехники для детей в Актобе
+					</h3>
+					<div class="logo">
+						<img src="./img/logo.png" alt="">
+					</div>
+					<div class="footer-contact">
+						<a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
+					</div>
+					<div class="footer-content-comand">
+						Разработано командой <br>
+						<img src="./img/MarketingTime.png" alt="">
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+	
+	<div class="remodal" data-remodal-id="more-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+
+		<div class="more-modal-content">
+			<div class="more-modal-image">
+				<img src="./img/program-1.jpg" alt="">
+				<h3 class="more-modal-title">Основы робототехники</h3>
+			</div>
+			<div class="more-modal-text">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="remodal remodal-small" data-remodal-id="thanks-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+
+      <div class="modal-title">Спасибо!</div>
+      <div class="modal-text">за Вашу заявку, наш менеджер 
+		свяжется с Вами в ближайшее время!</div>
+		<button class="button" data-remodal-action="close">Вернуться на главную</button>
+	</div>
+
+	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<div class="form">
+			<h5 class="modal-title">Заказать звонок</h5>
+			<div class="modal-text">Оставьте заявку и наш менеджер 
+				свяжется с Вами в ближайшее время</div>
+			<form action="Оставить заявку">
+			   <input type="hidden" name="info" value="Оставить заявку">
+				<input type="text" class="input" name="Имя" placeholder="Введите имя">
+				<input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
+				<span class="error-message">Заполните это поле</span>
+				<button class="button ajax-submit" type="submit">Оставить заявку</button>
+			</form>
+		</div>
+
+   </div>
+	
+
+									
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+    
+</body>
+</html>

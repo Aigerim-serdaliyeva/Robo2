@@ -1,22 +1,20 @@
 @import "_mixins/font-face";
 
-@include font-face("Lato", "../fonts/Lato/Thin/Lato-Thin", 100);
-@include font-face("Lato", "../fonts/Lato/ThinItalic/Lato-ThinItalic", 100, italic);
-@include font-face("Lato", "../fonts/Lato/ExtraLight/Lato-ExtraLight", 200);
-@include font-face("Lato", "../fonts/Lato/ExtraLightItalic/Lato-ExtraLightItalic", 200, italic);
-@include font-face("Lato", "../fonts/Lato/Light/Lato-Light", 300);
-@include font-face("Lato", "../fonts/Lato/LightItalic/Lato-LightItalic", 300, italic);
-@include font-face("Lato", "../fonts/Lato/Regular/Lato-Regular", normal);
-@include font-face("Lato", "../fonts/Lato/RegularItalic/Lato-RegularItalic", normal, italic);
-@include font-face("Lato", "../fonts/Lato/Medium/Lato-Medium", 500);
-@include font-face("Lato", "../fonts/Lato/MediumItalic/Lato-MediumItalic", 500, italic);
-@include font-face("Lato", "../fonts/Lato/SemiBold/Lato-SemiBold", 600);
-@include font-face("Lato", "../fonts/Lato/SemiBoldItalic/Lato-SemiBoldItalic", 600, italic);
-@include font-face("Lato", "../fonts/Lato/Bold/Lato-Bold", bold);
-@include font-face("Lato", "../fonts/Lato/BoldItalic/Lato-BoldItalic", bold, italic);
-@include font-face("Lato", "../fonts/Lato/Heavy/Lato-Heavy", 800);
-@include font-face("Lato", "../fonts/Lato/HeavyItalic/Lato-HeavyItalic", 800, italic);
-@include font-face("Lato", "../fonts/Lato/Black/Lato-Black", 900);
-@include font-face("Lato", "../fonts/Lato/BlackItalic/Lato-BlackItalic", 900, italic);
+@include font-face("Roboto", "../fonts/Roboto/Thin/Roboto-Thin", 100);
+@include font-face("Roboto", "../fonts/Roboto/ThinItalic/Roboto-ThinItalic", 100, italic);
+@include font-face("Roboto", "../fonts/Roboto/ExtraLight/Roboto-ExtraLight", 200);
+@include font-face("Roboto", "../fonts/Roboto/ExtraLightItalic/Roboto-ExtraLightItalic", 200, italic);
+@include font-face("Roboto", "../fonts/Roboto/Light/Roboto-Light", 300);
+@include font-face("Roboto", "../fonts/Roboto/LightItalic/Roboto-LightItalic", 300, italic);
+@include font-face("Roboto", "../fonts/Roboto/Regular/Roboto-Regular", normal);
+@include font-face("Roboto", "../fonts/Roboto/RegularItalic/Roboto-RegularItalic", normal, italic);
+@include font-face("Roboto", "../fonts/Roboto/Medium/Roboto-Medium", 500);
+@include font-face("Roboto", "../fonts/Roboto/MediumItalic/Roboto-MediumItalic", 500, italic);
+@include font-face("Roboto", "../fonts/Roboto/Bold/Roboto-Bold", bold);
+@include font-face("Roboto", "../fonts/Roboto/BoldItalic/Roboto-BoldItalic", bold, italic);
+@include font-face("Roboto", "../fonts/Roboto/Heavy/Roboto-Heavy", 800);
+@include font-face("Roboto", "../fonts/Roboto/HeavyItalic/Roboto-HeavyItalic", 800, italic);
+@include font-face("Roboto", "../fonts/Roboto/Black/Roboto-Black", 900);
+@include font-face("Roboto", "../fonts/Roboto/BlackItalic/Roboto-BlackItalic", 900, italic);
 
 
