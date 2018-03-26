@@ -207,6 +207,39 @@ body {
 		}
 	}
 
+	&-prohodit {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-texts {
+			display: none;
+		}
+
+		&-content {
+			width: 100%;
+		}
+
+		&-title {
+			font-size: 20px;
+			font-weight: 900;
+		}
+
+		&-text {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		svg {
+			width: 100%;
+			height: auto; 
+
+			.cls-7 {
+				font-size: 18px;
+			}
+		}
+	}
+
 	&-form {
 		padding-top: 40px;
 		background-color: #fdf6f1;

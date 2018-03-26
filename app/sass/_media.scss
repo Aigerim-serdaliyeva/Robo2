@@ -2,6 +2,30 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1500px) {
+	.section {
+		&-prohodit {
+			svg {
+				.cls-7 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+ }
+
+ @media only screen and (max-width : 1400px) {
+	.section {
+		&-prohodit {
+			&-content {
+				width: auto;
+			}
+			svg {
+				width: 1500px;
+			}
+		}
+	}
+ }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
@@ -57,6 +81,15 @@
 				img {
 					margin-bottom: 15px;
 				}
+			}
+		}
+
+		&-prohodit {
+			&-texts {
+				display: block;
+			}
+			svg {
+				display: none;
 			}
 		}
 
