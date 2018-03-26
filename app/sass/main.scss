@@ -3,7 +3,7 @@
 @import "base";
 
 html, body {
-	height: 100%;
+	// height: 100%;
 	margin: 0;
 }
 
@@ -312,8 +312,9 @@ body {
 
 	&-zaniyatie {
 		.zaniyatie {
+         display: block;
 			position: relative;
-			&:hover {
+			&-video {
 				&::before {
 					content: "";
 					position: absolute;
@@ -589,7 +590,7 @@ body {
 	&-image {
 		flex-shrink: 0;
 		margin-right: 30px;
-		width: 360px;
+		width: 293px;
 
 		img {
 			margin-bottom: 20px;

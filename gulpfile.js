@@ -81,6 +81,14 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], fun
         'app/.htaccess',
     ]).pipe(gulp.dest('dist'));
 
+    var buildFile = gulp.src([
+      'app/files/*'
+  ]).pipe(gulp.dest('dist/files'));
+
+  var buildVideos = gulp.src([
+      'app/videos/*',
+   ]).pipe(gulp.dest('dist/videos'));
+
     var buildCss = gulp.src([
 		'app/css/libs.min.css',
         'app/css/main.min.css',
