@@ -76,7 +76,7 @@ $(document).ready(function() {
 
    $(".more-modal-open").click(function() {
         var $item = $(this).closest(".program");
-        $more.find('.more-modal-image img').attr('src', '/img/' + $item.data('image'));
+        $more.find('.more-modal-image img').attr('src', './img/' + $item.data('image'));
         $more.find('.more-modal-title').html($item.data('title'));
         $more.find('.more-modal-text').html($item.data('text'));
         more.open();
@@ -184,11 +184,13 @@ $(document).ready(function() {
                url: "/mail.php",
                data: data
            }).done(function() {                
+            $requireds.removeClass('error');
+            $form[0].reset();
+            window.location = "thanks.html";
            });
 
-           $requireds.removeClass('error');
-           $form[0].reset();
-           thanks.open();
+
+         //   thanks.open();
        }
   });
 
