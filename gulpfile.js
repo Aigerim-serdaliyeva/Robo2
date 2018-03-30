@@ -56,7 +56,7 @@ gulp.task('sass', function() {
         .pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix : ''}))
         .pipe(autoprefixer(['last 15 versions']))
-        // .pipe(cleanCSS()) // Опционально, закомментировать при отладке
+        .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
 });
@@ -78,6 +78,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], fun
     var buildFiles = gulp.src([
         'app/*.html',
         'app/*.php',
+        'app/*.txt',
         'app/.htaccess',
     ]).pipe(gulp.dest('dist'));
 

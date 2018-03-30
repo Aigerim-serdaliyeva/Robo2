@@ -76,7 +76,8 @@ body {
 		font-weight: normal;
 	}
 	.phone-link {
-		font-size: 20px;
+      font-size: 20px;
+      font-weight: bold;
 		text-decoration: none;
 		color: $default_text_color;
 	}
@@ -605,6 +606,35 @@ body {
 	&-text {
 		font-size: 18px;
 	}
+}
+
+#thanks-page {
+   .header {
+      position: static;
+   }
+   
+   .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .section-thanks {
+      flex-grow: 1;
+      background-image: url('../img/main-back.jpg');
+      // background-size: cover;
+      &-content {
+         margin: 0 auto;
+         padding: 35px;
+         max-width: 450px;
+         text-align: center;
+         background-color: #ffa366;
+
+         .button {
+            margin-top: 30px;
+         }
+      }
+   }
 }
 
 @import "media"; // Всегда в конце
