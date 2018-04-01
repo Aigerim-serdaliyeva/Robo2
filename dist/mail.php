@@ -5,7 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $project_name = "РобоТрек";
 $admin_email  = "info@robotaktobe.kz, client@marketing-time.kz";
 $server_mail = "<info@robotaktobe.kz>";
-$form_subject = $_POST['info'];
+$form_subject = "Заявка";
 
 
 //Script Foreach
