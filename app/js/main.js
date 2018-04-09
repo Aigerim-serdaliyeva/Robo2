@@ -130,7 +130,7 @@ $(document).ready(function() {
       margin: 30,
       navText: ['', ''],
       responsive: {
-          0: { items: 1 },
+          0: { items: 1, mouseDrag: false },
           480: { items: 2 },
           768: { items: 3 },        
           992: { margin: 50 },
@@ -145,7 +145,7 @@ $(document).ready(function() {
       margin: 30,
       navText: ['', ''],
       responsive: {
-          0: { items: 1 },
+          0: { items: 1, mouseDrag: false },
           480: { items: 2 },
           768: { items: 3 },        
           992: { margin: 50 },
