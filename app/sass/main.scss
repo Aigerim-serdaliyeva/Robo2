@@ -397,7 +397,13 @@ body {
 		.section-title {
 			margin-top: 20px;
 			margin-bottom: 20px;
-		}
+      }
+      a {
+         font-weight: normal;
+         color: #000;
+         text-decoration: none;
+         text-decoration: none;
+      }
 		&-content {			
 			background-color: rgba($accent, 0.5);
 			max-width: 480px;
@@ -459,7 +465,11 @@ body {
 					background: $accent;
 				}
 			}
-		}
+      }
+      
+      .mobile-table {
+         display: none;
+      }
 	}
 
 

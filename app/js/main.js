@@ -121,6 +121,11 @@ $(document).ready(function() {
       $(".program-content").equalHeights();
   }, 000);
 
+  $(".mobile-table-days select").change(function() {
+     $(".mobile-table-day").removeClass("active");
+     console.log($(this).val());
+     $(".mobile-table-day[data-id=" + $(this).val() + "]").addClass("active");
+  })
 
   $(".section-program-carousel").owlCarousel({
       nav: false,

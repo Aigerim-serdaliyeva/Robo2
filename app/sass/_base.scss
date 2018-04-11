@@ -28,8 +28,8 @@ p {
 	margin: 0 0 1em 0;
 }
 
-input, a, button {
-   outline: 0;
+input, a, button, select, option {
+   outline: none;
 }
 
 img {
