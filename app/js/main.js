@@ -191,11 +191,8 @@ $(document).ready(function() {
            }).done(function() {                
             $requireds.removeClass('error');
             $form[0].reset();
-            // window.location = "thanks.html";
+            window.location = "thanks.html";
            });
-
-
-         //   thanks.open();
        }
   });
 
