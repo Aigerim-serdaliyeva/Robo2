@@ -115,6 +115,8 @@ body {
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
 	overflow: hidden;
 }
 

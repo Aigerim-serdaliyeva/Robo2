@@ -315,15 +315,19 @@
          }
       }
 
-		&-contact-content {
-			position: static;
-			max-width: 100%;
-			margin-left: 0;
-			padding: 20px 15px;
-			.section-contact-block {
-				
-			}
-		}		
+		&-contact {
+      .map {
+        & > ymaps {
+          height: 300px !important;
+        }
+      }
+      &-content {
+        position: static;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 20px 15px;
+      }		
+    }
 	}
 	
 
@@ -354,6 +358,7 @@
 			margin-bottom: 20px;
 		}
 		&-main {
+      order: 1;
 			padding-top: 150px;
 			&-title {
 				font-size: 28px;
@@ -365,14 +370,16 @@
 			}
 		}
 		&-polza {
+      order: 2;
 			.review {
 				text-align: center;
 				img {
 					float: none;
 				}
 			}
-		}
+    }    
 		&-reason {
+      order: 3;
 			.reason {
 				margin-bottom: 30px;
 				width: 100%;
@@ -381,8 +388,10 @@
 					margin-bottom: 5px;
 				}
 			}
-		}
+    }
+    
 		&-group {
+      order: 9;
 			&-text {
 				font-size: 16px;
 				margin-bottom: 15px;
@@ -400,8 +409,44 @@
 					margin-bottom: 15px;
 				}
 			}
-		}
-	}
+    }
+
+    &-form-2 {
+      order: 4;
+    }
+
+    &-prohodit {
+      order: 5;
+    }
+
+    &-program {
+      order: 6;
+    }
+
+    &-form-1 {
+      order: 7;
+    }
+
+    &-zaniyatie {
+      order: 8;
+    }
+
+    &-schedule {
+      order: 10;
+    }
+
+    &-form-3 {
+      order: 11;
+    }
+
+    &-contact {
+      order: 12;
+    }
+  }
+  
+  .footer {
+    order: 13;
+  }
 
 	.col-xxs-12 {
 		width: 100%;
