@@ -372,7 +372,13 @@
 		&-polza {
       order: 2;
 			.review {
-				text-align: center;
+        text-align: center;
+        &-text {
+          text-align: left;
+        }
+        &-title {
+          text-align: center;
+        }
 				img {
 					float: none;
 				}
