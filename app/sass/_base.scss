@@ -45,6 +45,18 @@ video {
 	text-align: center;
 }
 
+.text {
+   &-phone {
+      white-space: nowrap;
+
+      &:before {
+         content: "\f095";
+         font-family: FontAwesome;
+         margin-right: 5px;
+      }
+   }
+}
+
 .link {
 	color: $accent;
 	font-weight: normal;
