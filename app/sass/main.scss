@@ -42,6 +42,56 @@ body {
 	}
 }
 
+.call-me {
+   position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 99;
+	cursor: pointer;
+   @include circle(50px);
+   background-color: #58ea00;
+   cursor: pointer;
+   display: none;
+
+   .fa {
+      color: #fff;
+      font-size: 25px;
+      position: relative;
+      top: 5px;
+   }
+
+   &:before,
+   &:after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      right: -15px;
+      bottom: -15px;
+      border: 1px solid #58ea00;
+      border-radius: 50%;
+      animation: pulse 1.5s linear infinite;
+   }
+
+   &:after {
+      animation-delay: 0.5;
+   }
+}
+
+@keyframes pulse {
+   0% {
+      opacity: 0;
+      transform: scale(0.5);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: scale(1);
+   }
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -211,6 +261,34 @@ body {
    
    &-video {
       display: none;
+      .video-img {
+         position: relative;
+         &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(153,0,0,.2);
+         }
+         &:after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/triangle.png);
+            width: 76px;
+            height: 76px;
+            top: 50%;
+            left: 50%;
+            margin-top: -38px;
+            margin-left: -38px;
+            background-repeat: no-repeat;
+         }
+      }
+
+      .video {
+         display: none;
+      }
    }
 
 	&-program {

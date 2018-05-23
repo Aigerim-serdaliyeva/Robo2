@@ -359,7 +359,11 @@
 
 	.hidden-xxs {
 		display: none !important;
-	}
+   }
+   
+   .call-me {
+      display: block;
+   }
 
 	.header {
 		.logo {

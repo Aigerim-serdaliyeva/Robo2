@@ -121,6 +121,10 @@ $(document).ready(function() {
       $(".program-content").equalHeights();
   }, 000);
 
+  $(".video-img").click(function(){
+     $(this).hide().siblings(".video").show()[0].play();
+  })
+
   $(".mobile-table-days select").change(function() {
      $(".mobile-table-day").removeClass("active");
      console.log($(this).val());
