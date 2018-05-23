@@ -24,6 +24,7 @@
         margin-top: 30px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         &.disabled {
            display: flex;
         }
@@ -34,7 +35,7 @@
         background-color: lighten($color: $green, $amount: 30%) !important;
         width: 12px;
         height: 12px;
-        margin: 0 5px;
+        margin: 0 5px 5px;
         &.active {
          background-color: $green !important;
       }
